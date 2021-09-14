@@ -6,16 +6,68 @@ html,body {
     padding: 0;
     height: 100%;
 }
+h3,p{
+    padding:0; margin:0;
+}
+/* float해제 */
+div::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 
-/* 1. 토이스토리 기본 뒷 배경 */
+/* 로고 및 뒷 기본 배경 */
 body{
-    background: url(../images/bg.jpg) no-repeat fixed center/cover;
+    background: 
+    url(../images/logo.png) no-repeat center 75%/269px,/* 2. 로고 */
+    url(../images/bg.jpg) no-repeat fixed center bottom/cover;/* 1. 토이스토리 기본 뒷 배경 */
 }
 
-/* 2. 로고 */
-
-div#logo img{
-    width:269px; 
+/* 5:5 배경 */
+/* .toystory_wrap{
+    width: 50%; height: 100%; float:left;
 }
+.left{
+    outline:3px solid blue;
+    position:relative;
+}
+.right{
+    outline:3px solid rgb(53, 150, 53);
+} */
+
+
+/* 3. woody */
+div.woody{
+    width:520px;
+    position:absolute; bottom:15%; left:20%;
+}
+.woody_img img{
+    width:220px; float:left;  
+}
+.txt_box{
+   width:290px; float:right; background:rgb(255, 255, 255);
+   border:1px solid #252525; border-radius: 20px; 
+   padding:10px; text-align: justify;
+   box-sizing: border-box; 
+   display:none; opacity:0;
+   transition:opacity .6s ease;
+   margin-top:-50px;
+}
+.txt_title{
+    margin-bottom:14px;
+}
+.txt_contents{
+    font:normal 14px/20px "맑은 고딕"; color:#252525;
+}
+.woody:hover .txt_box{
+    display:block; opacity:1;
+    
+}
+
+
+
+
+
+
 
 
