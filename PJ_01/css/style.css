@@ -7,4 +7,15 @@ html,body {
     height: 100%;
 }
 
+/* 1. 토이스토리 기본 뒷 배경 */
+body{
+    background: url(../images/bg.jpg) no-repeat fixed center/cover;
+}
+
+/* 2. 로고 */
+
+div#logo img{
+    width:269px; 
+}
+
 
