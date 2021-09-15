@@ -24,16 +24,15 @@ body {
 }
 
 /* 5:5 배경 */
-/* .toystory_wrap{
+.toystory_wrap{
     width: 50%; height: 100%; float:left;
 }
 .left{
-    outline:3px solid blue;
-    position:relative;
+    outline:3px solid blue; position:relative;
 }
 .right{
     outline:3px solid rgb(53, 150, 53);
-} */
+}
 
 
 /* 3. woody */
@@ -51,16 +50,16 @@ div.woody {
 }
 .woody_txt{
     margin-top: -50px;
-    width: 290px;
 }
 .txt_box {
+    width: 290px;
     height: 0;
     overflow: hidden;
     float: right;
     transition: height .2s ease-in-out;
 }
 
-.txt_box .ibx {
+.ibx {
     padding: 10px;
     border: 3px solid #004e98;
     text-align: justify;
@@ -88,4 +87,15 @@ div.woody {
 .woody:hover>img {
     filter: grayscale(0%);
     transform: rotateY(0deg);
+}
+
+/* 4.jessie */
+
+.jessie{
+
+
+
+
+
+
 }
