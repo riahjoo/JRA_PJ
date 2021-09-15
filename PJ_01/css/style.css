@@ -47,12 +47,16 @@ div.woody{
    transition:height .2s ease-in-out;
    padding:10px; border:1px solid #252525;
 }
+
+
 .txt_title{
     margin-bottom:14px;
 }
 .txt_contents{
     font:normal 14px/20px "맑은 고딕"; color:#252525;
+  
 }
+
 .woody:hover .txt_box{
     height:100%;
     
