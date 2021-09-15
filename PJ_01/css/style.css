@@ -36,7 +36,7 @@ div.woody{
     position:absolute; bottom:15%; left:20%;
 }
 .woody>img{
-    width:220px; float:left;  
+    width:220px; 
 }
 .txt_box{
    width:290px; height: 0; overflow: hidden; 
