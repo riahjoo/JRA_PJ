@@ -9,12 +9,6 @@ html,body {
 h3,p{
     padding:0; margin:0;
 }
-/* float해제 */
-div::after{
-    content: '';
-    display: block;
-    clear: both;
-}
 
 /* 로고 및 뒷 기본 배경 */
 body{
@@ -45,13 +39,14 @@ div.woody{
     width:220px; float:left;  
 }
 .txt_box{
-   width:290px; float:right; background:rgb(255, 255, 255);
-   border:1px solid #252525; border-radius: 20px; 
-   padding:10px; text-align: justify;
-   box-sizing: border-box; 
-   display:none; opacity:0;
-   transition:opacity .6s ease;
-   margin-top:-50px;
+   width:290px; height: 0; overflow: hidden; 
+   float:right; 
+   text-align: justify;
+   box-sizing: border-box;  
+   background:rgb(255, 255, 255);
+   border-radius: 20px; 
+   transition:height .2s ease-in-out;
+   padding:10px; border:1px solid #252525;
 }
 .txt_title{
     margin-bottom:14px;
@@ -60,9 +55,10 @@ div.woody{
     font:normal 14px/20px "맑은 고딕"; color:#252525;
 }
 .woody:hover .txt_box{
-    display:block; opacity:1;
+    height:100%;
     
 }
+
 
 
 
