@@ -1,20 +1,26 @@
 @charset "utf-8";
 
 /* 초기화 셋팅 */
-html,body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
-h3,p{
-    padding:0; margin:0;
+
+h3,
+p {
+    padding: 0;
+    margin: 0;
 }
 
 /* 로고 및 뒷 기본 배경 */
-body{
-    background: 
-    url(../images/logo.png) no-repeat center 75%/269px,/* 2. 로고 */
-    url(../images/bg.jpg) no-repeat fixed center bottom/cover;/* 1. 토이스토리 기본 뒷 배경 */
+body {
+    background:
+        url(../images/logo.png) no-repeat center 75%/269px,
+        /* 2. 로고 */
+        url(../images/bg.jpg) no-repeat fixed center bottom/cover;
+    /* 1. 토이스토리 기본 뒷 배경 */
 }
 
 /* 5:5 배경 */
@@ -31,43 +37,54 @@ body{
 
 
 /* 3. woody */
-div.woody{
-    width:520px;
-    position:absolute; bottom:15%; left:20%;
-}
-.woody>img{
-    width:220px; 
-}
-.txt_box{
-   width:290px; height: 0; overflow: hidden; 
-   float:right; text-align: justify;
-   box-sizing: border-box;  
-   background:#fff;
-   border-radius:20px; 
-   transition:height .2s ease-in-out;
-   padding:10px; border:3px solid #004e98;
-   margin-top:-50px;
+div.woody {
+    width: 520px;
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
 }
 
-
-.txt_title{
-    margin-bottom:14px;
-    color:#004e98;
-}
-.txt_contents{
-    font:normal 14px/20px "맑은 고딕"; color:#000000;
-  
+.woody>img {
+    width: 220px;
+    filter: grayscale(100%);
+    transform: rotateY(180deg);
 }
 
-.woody:hover .txt_box{
-    height:100%;
+.txt_box {
+    width: 290px;
+    height: 0;
+    overflow: hidden;
+    float: right;
+    transition: height .2s ease-in-out;
+    margin-top: -50px;
+}
+
+.txt_box .ibx {
+    padding: 10px;
+    border: 3px solid #004e98;
+    text-align: justify;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 20px;
 }
 
 
+.txt_title {
+    margin-bottom: 14px;
+    color: #004e98;
+}
 
+.txt_contents {
+    font: normal 14px/20px "맑은 고딕";
+    color: #000000;
 
+}
 
+.woody:hover .txt_box {
+    height: 300px;
+}
 
-
-
-
+.woody:hover>img {
+    filter: grayscale(0%);
+    transform: rotateY(0deg);
+}
