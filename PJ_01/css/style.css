@@ -176,5 +176,60 @@ div.woody {
 
 .rex:hover>img{
     filter: grayscale(0%);
+    filter:drop-shadow(9px 9px 4px rgba(7, 7, 7, 0.781));
     transform:scale(2)
+}
+
+/* 8.potato */
+
+.potato{
+    width: 600px; 
+    position:absolute;
+    bottom:50px; right:30px;
+    
+}
+.potato_txt{
+    margin:0px auto; margin-top:-180px;
+}
+
+.potato>img:nth-child(1){
+    float:left;
+}
+
+.potato>img:nth-child(2){
+    float:right;
+}
+.potato>img{
+    width: 150px;  
+    filter: grayscale(100%); 
+}
+
+.potato:hover>img:nth-child(1){
+    filter: grayscale(0%);
+    filter:drop-shadow(9px 9px 4px rgba(7, 7, 7, 0.781));
+    transform:translateX(150px);
+}
+.potato:hover>img:nth-child(2){
+    filter: grayscale(0%);
+    filter:drop-shadow(9px 9px 4px rgba(7, 7, 7, 0.781));
+    transform:translateX(-150px);
+}
+
+/* 9.aliens*/
+
+.aliens{
+    width: 650px; 
+    position:absolute;
+    top:40px; left:50px;
+}
+
+.aliens>img{
+    width: 300px;  
+    filter: grayscale(100%);
+    transform:translateX(120px)
+}
+
+.aliens:hover>img{
+    filter: grayscale(0%);
+    transform:translateX(0px)
 }
