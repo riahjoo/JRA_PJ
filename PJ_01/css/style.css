@@ -120,7 +120,7 @@ div.woody {
 .ham{
     width: 500px; 
     position:absolute;
-    bottom:50px; left:20px;
+    bottom:50px; left:100px;
 }
 .ham_txt{
     width: 310px; 
@@ -219,8 +219,9 @@ div.woody {
 
 .aliens{
     width: 650px; 
-    position:absolute;
-    top:40px; left:50px;
+    position:absolute; background-color: #fff;
+    left:calc(50% - 325px); bottom:10%;
+    
 }
 
 .aliens>img{
