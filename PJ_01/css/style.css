@@ -150,12 +150,12 @@ div.woody {
 .buzz>img{
     width: 313px;  
     filter: grayscale(100%);
-    transform:translatex(120px)
+    transform:translateX(120px)
 }
 
 .buzz:hover>img{
     filter: grayscale(0%);
-    transform:translatex(0px)
+    transform:translateX(0px)
 }
 
 /* 7.rex */
