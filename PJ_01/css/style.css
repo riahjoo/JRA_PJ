@@ -1,43 +1,115 @@
 @charset "utf-8";
 
 /* 초기화 셋팅 */
-html,body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
-h3,p{
-    padding:0; margin:0;
+
+h3,
+p {
+    padding: 0;
+    margin: 0;
 }
 
 /* 로고 및 뒷 기본 배경 */
-body{
-    background: 
-    url(../images/logo.png) no-repeat center 75%/269px,/* 2. 로고 */
-    url(../images/bg.jpg) no-repeat fixed center bottom/cover;/* 1. 토이스토리 기본 뒷 배경 */
+body {
+    background:
+        url(../images/logo.png) no-repeat center 75%/269px,
+        /* 2. 로고 */
+        url(../images/bg.jpg) no-repeat fixed center bottom/cover;
+    /* 1. 토이스토리 기본 뒷 배경 */
 }
 
 /* 5:5 배경 */
-/* .toystory_wrap{
-    width: 50%; height: 100%; float:left;
+.toystory_wrap{
+    width: 50%; height: 100%; 
+
 }
 .left{
-    outline:3px solid blue;
+    outline:3px solid blue; float:left;
     position:relative;
 }
 .right{
     outline:3px solid rgb(53, 150, 53);
-} */
+    float:right; position:relative;
+}
 
 
 /* 3. woody */
-div.woody{
-    width:520px;
-    position:absolute; bottom:15%; left:20%;
+div.woody {
+    width: 520px; 
+    position:absolute;
+    right:0px; bottom:150px; 
 }
-.woody>img{
-    width:220px; 
+
+.woody>img {
+    width: 220px;
+    filter: grayscale(100%);
+    transform: rotateY(180deg);
 }
+.woody_txt{
+    margin-top: -50px;
+}
+.txt_box {
+    width: 290px;
+    height: 0;
+    overflow: hidden;
+    float: right;
+    transition: height .2s ease-in-out;
+}
+.ibx {
+    padding: 10px;
+    border: 3px solid #004e98;
+    
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.txt_title {
+    margin-bottom: 14px;
+    color: #004e98;
+}
+
+.txt_contents {
+    font: normal 14px/20px "맑은 고딕";
+    color: #000000;text-align: justify;
+
+}
+
+.hv:hover .txt_box {
+    height: 200px;
+}
+
+.woody:hover>img {
+    filter: grayscale(0%);
+    transform: rotateY(0deg);
+}
+
+/* 4.jessie */
+
+.jessie{
+    width: 520px; 
+    position:absolute;
+    left:50px; top:50px; 
+}
+.jessie>img:nth-child(1) {
+    width: 140px;
+    filter: grayscale(100%);
+    
+}
+
+.jessie>img:nth-child(2) {
+    width: 190px;  
+    filter: grayscale(100%);
+    transform: rotate(20deg);
+    margin-left:-115px;
+    
+}
+<<<<<<< HEAD
 .txt_box{
    width:290px; height: 0; overflow: hidden; 
    float:right; text-align: justify;
@@ -47,27 +119,74 @@ div.woody{
    transition:height .2s ease-in-out;
    padding:10px; border:3px solid #004e98;
    margin-top:-50px;
+=======
+.jessie:hover>img {
+    filter: grayscale(0%);
+    transform: rotate(0deg);
+ 
+>>>>>>> 4f0c70d791f3f8c06126284d37a82178f4366fb6
 }
 
+/* 5.ham */
 
-.txt_title{
-    margin-bottom:14px;
-    color:#004e98;
+.ham{
+    width: 500px; 
+    position:absolute;
+    bottom:50px; left:20px;
 }
-.txt_contents{
-    font:normal 14px/20px "맑은 고딕"; color:#000000;
-  
-}
-
-.woody:hover .txt_box{
-    height:100%;
+.ham_txt{
+    width: 310px; 
 }
 
+.ham>img {
+    width: 180px;  
+    filter: grayscale(100%);
+    transform: rotateY(180deg)
+}
 
+.ham:hover>img {
+    filter: grayscale(0%);
+}
+.ham:hover .txt_box {
+    height: 190px;
+}
 
+/* 6.buzz */
 
+.buzz{
+    width: 650px; 
+    position:absolute;
+    top:40px; left:50px;
+}
 
+.buzz>img{
+    width: 313px;  
+    filter: grayscale(100%);
+    transform:translatex(120px)
+}
 
+.buzz:hover>img{
+    filter: grayscale(0%);
+    transform:translatex(0px)
+}
 
+/* 7.rex */
 
+.rex{
+    width: 543px; 
+    position:absolute;
+    bottom:200px; left:200px;
+}
+.rex_txt{
+    margin-top:-100px;
+}
 
+.rex>img{
+    width: 196px;  
+    filter: grayscale(100%);
+}
+
+.rex:hover>img{
+    filter: grayscale(0%);
+    transform:scale(2)
+}
