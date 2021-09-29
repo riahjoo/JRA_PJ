@@ -4,6 +4,10 @@
 @import url(reset.css);
 
 
+body{
+background-color:rgba(0, 0, 0, 0.417);
+}
+
 /* 속박스 */
 .ibx{
   max-width: 1200px;  margin:0 auto;
@@ -11,15 +15,31 @@
 }
 /* 1. 상단영역 */
 .top{
-height:160px; 
+  height:140px; 
+  position:relative;
 }
+header.top img{
+   margin-top:25px;
+}
+header.top button{
+  float:right; margin-top:70px;
+  margin-right:20px;
+}
+.gnb{
+  position:absolute;
+  left:300px; top:50%; transform:translateY(-50%);
+}
+.gnb>li{
+  float:left;
+  padding: 0 10px;font-size:20px;
+}
+
 
 
 /* 2. 메인영역 */
 #main_cont{
   background: url(../images/bg.jpg) no-repeat center/cover;
- 
-
+  
 
 }
 .cont{
