@@ -5,7 +5,7 @@
 
 
 body{
-  background-color:rgba(255, 255, 255, 0.986);
+  background:#4f575a;
 }
 
 ul::after,ol::after{
@@ -18,13 +18,13 @@ li{
 }
 /* 속박스 */
 .ibx{
-  width: 1200px;  margin:0 auto;
+  width: 1200px;  margin:0 auto; 
 }
 /* 1. 상단영역 */
 .top{
   height:140px; 
   position:relative; 
-  background-color:#444f53cc;
+  background:#4f575a;
 }
 
 /* 1-2. 로고 */
