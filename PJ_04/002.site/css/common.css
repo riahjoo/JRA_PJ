@@ -19,7 +19,8 @@
 }
 
 .top{
-  min-height:186px; 
+  min-height:206px; 
+  
 }
 
 
@@ -128,9 +129,9 @@
   font-size: 100%; /* 기본 h1태그는 font-size:2em으로 잡혀있음
   이것때문에 박스 높이가 조금 더 잡힌다. 100%로 해주면 기본글자크기
   16px로 셋업되어서 높이값이 줄어든다. */
-  margin-bottom:20px;
 }
 .logo img{
+  
   vertical-align:bottom;
   /* 
     블록박스에 이미지를 넣은 경우 아래쪽에 약 4px정도의 간극이
@@ -154,7 +155,8 @@
   display:flex; /* 내용만큼 옆으로 나열 */
   flex-wrap:wrap;/* 줄바꿈 가능 */
   justify-content: center;/* 자식요소 가로 중앙정렬 */
-  margin:0 auto; max-width:798px; 
+  margin:0 auto; max-width:758px;
+  
 }
 .gnb li{
   margin:0 23px;
@@ -172,6 +174,218 @@
   color:#f00;
 }
 
+/**************슬림 상단영역: #top에 .on을 준다*************/
+/* 속박스 */
+#top.on{
+  position:fixed;
+  top:0; left:0; width:100%;/* 내용만큼 줄어드니까 width는 100% */
+  background-color:#fff;
+}
+#top.on .top{
+    min-height: auto; /* 최소 높이 없애기 */
+}
+/* 상단메뉴 없애기 */
+#top.on .tmenu{
+    display: none;
+}
+/* 로고 */
+#top.on .logo{
+    position:absolute; left:0;/* 부모는 #top - 겉박스가 기준 */
+
+}
+/* 로고 이미지 */
+#top.on .logo img{
+    height:26px; margin:5px 0 0 8px;
+}
+/* GNB */
+#top.on .gnb{
+    font-size: 14px; box-sizing: border-box;
+    padding:0 107px;/* 양쪽패딩으로 끝에 닿기전에 줄바꿈 되게함 */
+}
+#top.on .gnb ul{
+  max-width:631px;
+}
+
+#top.on .gnb li{
+    margin:0 18px;
+}
+#top.on .gnb li a{
+    color:#333;
+}
+#top.on .gnb a:hover{
+  color:#f00;
+}
+
+ /* *************************모바일 메뉴 영역********************** */      
+/* 모바일 전용버튼 */
+.mobtn{/* 공통 */
+  position: absolute;
+  /* 부모는? #top(모바일에서 fixed) */
+  width: 21px;
+  height: 21px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* 세로중앙이동 */
+  display: none;/* 처음에 안보임 */
+}
+/* 모바일용 햄버거 버튼 */
+.hbtn{
+  left: 10px;
+  font-size: 15px;
+}
+/* 모바일용 검색버튼 */
+.sbtn{
+  right: 10px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/* 1.4. 모바일 검색박스 */
+.mos{
+  padding: 15px 30px;
+  background-color: #fff;
+  display: none;/* 처음에 숨기기 */
+}
+/* 검색속박스 */
+.mwrap{
+  position: relative;
+  /* 부모자격 */
+  width: 100%;
+  height: 35px;
+  background-color: #000;
+}
+/* 검색입력창 - 부모박스의 크기에 따라 유동적인 박스 */
+#search{
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 50px;
+  bottom: 9px;
+}
+/* 입력양식 */
+#search input{
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+}
+/* input박스는 일반 div박스와 다르기때문에 겉박스를 만들고
+채우기 형식으로 디자인함! */
+
+/* 검색버튼 */
+.scbtn{
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* 1.5. 모바일 전체메뉴박스 (#top의 하위자식으로 편성) */
+#mobx{
+  padding-left: 15px;
+  padding-top: 6px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  display: none;/* 처음에 안보임 */
+}
+/* 1.5-1.모바일 GNb */
+.mognb{
+  padding-left: 15px;
+}
+.mognb a{
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 2;
+  color: #333;
+}
+/* 1.5-2. 모바일 SNS */
+.mosns{
+  margin-top: 24px;
+  margin-left: 13px;
+}
+/* sns박스 a */
+.mosns a{
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin: 0 2px 10px;
+  font-size: 20px;
+  text-align: center;
+  /* 박스내의 인라인요소 가로중앙정렬 */
+  vertical-align: top;
+  /* 인라인 요소간 세로정렬(top-윗줄맞춤) */
+  line-height: 40px;
+  /* 보더가 2px내부에 포함되어서 2px뺀 높이와 같음! */
+  /* 글자가 박스 세로 중앙에 오도록 설정 */
+
+  /* 원형디자인 */
+  border: 1px solid #d2d2d2;
+  border-radius: 50%;
+  box-sizing: border-box;/* 보더포함 */
+}
+/* 트위터 아이콘 박스 */
+.mosns a.fi-twitter{
+  font-size: 16px;
+  /* 가로크기가 16px에 맞게 글자크기조정 */
+}
+/* 유튜브 아이콘 박스 */
+.mosns a.fi-youtube-play{
+  font-size: 15px;
+  /* 가로크기가 16px에 맞게 글자크기조정 */
+}
+/* mosns 마지막 a요소에 카스아이콘 넣기 */
+.mosns a:last-child{
+  background: url(../images/sns_kakao.png) no-repeat center/auto 50%;
+}
+
+/* 1.5-3.매거진박스 */
+.magbox{    
+  margin: 0;
+  padding: 10px 30px 0 15px;
+  font-family: 'NanumBarunGothic', sans-serif;
+}
+/* 잡지커버이미지 */
+.mcover img{
+  width: 100%;
+}
+/* 잡지설명 */
+.magbox figcaption{
+  font-size: 13px;
+  line-height: 2;
+  color: #222;
+}
+/* 정기구독버튼 */
+.magbtn{
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  padding: 5px 0;
+}
+/* 모바일 하단링크 */
+.moblink{
+  display: flex;
+  margin-left: 15px;
+  line-height: 3.5;
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+.moblink li+li{/* 2번째 li부터 */
+  padding-left: 7px;
+}
+.moblink a{
+  color: #222;
+}
 
 
 /* 3. 하단영역 */
@@ -185,12 +399,8 @@
 }
 /* 3-1. 하단로고 */
 .blogo{
-  text-align:center; 
+  text-align:center;
 }
-.blogo img{
-  width:200px;
-}
-
 
 /* 3-2. 회사주소 */
 .addr{
@@ -216,3 +426,25 @@
 .blink li:last-child a{
   font-weight:bold;
 }
+
+/* 위로가기 버튼 */
+.tbtn{
+  position:fixed; bottom:0; right: 75px;
+  background-color:#333; width: 48px;height: 35px;
+  text-align: center;line-height: 35px;
+  z-index:999;
+  color:#fff; border-radius:4px 4px 0 0;/* 왼위 오른위 오른아래 왼아래 */
+  display:none;
+
+  /* 트랜지션: 속시이지 */
+  transition: background-color .3s;
+}
+
+ 
+
+/* 탑버튼 마우스 오버시 */
+.tbtn:hover {
+  background-color:#f00;
+
+}
+

@@ -27,7 +27,7 @@
   background-image: url(../images/cont2-1.jpg);
 }
 .bg3{
-  background-image: url(../images/cont2-2.jpg);
+  background-image: url(../images/cont2-2.jpeg);
 }
 .bg4{
   background-image: url(../images/cont2-3.jpg);
@@ -56,13 +56,13 @@
 
 /* 6번 컨텐츠 3개 */
 .bg10{
-  background-image: url(../images/cont6-1.jpg);
+  background-image: url(../images/cont6-1.png);
 }
 .bg11{
   background-image: url(../images/cont6-2.jpg);
 }
 .bg12{
-  background-image: url(../images/cont6-3.jpg);
+  background-image: url(../images/cont6-3.png);
 }
 
 
@@ -75,16 +75,6 @@
 }
 .bg15{
   background-image: url(../images/cont7-3.jpg);
-}
-
-
-/* 파트타입1 - 이미지 1개 */
-.pt1{
-  /* height: 724px; */
-}
-/* 파트타입2 - 이미지 3개*/
-.pt2{
-  /* height: 650px; */
 }
 
 
