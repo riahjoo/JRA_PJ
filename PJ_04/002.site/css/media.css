@@ -11,8 +11,10 @@
   }
 
   /* 보이는 화면기준 뷰포트 단위사용! vw */
-
 }
+
+
+
 
 /* 1024px 이하 */
 
@@ -49,13 +51,13 @@
   }
 
   .logo img {
-    width: 130px;
+    width: 130px; 
   }
 
   /* 4. 상단영역 - 최소높이 없앰 */
   .top {
     min-height: auto;
-    height: 55px;
+    height: 45px;
     position: relative;
     /* 모바일버튼의 부모자격! */
     background-color: #fff;
@@ -69,7 +71,7 @@
 
   /* 6. 컨텐츠박스 상단 밀기(상단메뉴에 덮이므로) */
   .cont {
-    margin-top: 55px;
+    margin-top: 45px;
     /* 상단메뉴 높이값 만큼 밀었음! */
   }
 

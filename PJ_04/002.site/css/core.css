@@ -27,8 +27,6 @@ font-family: 'Roboto Condensed', sans-serif; */
 }
 
 
-
-
 /* 속박스 */
 .ibx{
   max-width: 1300px;  margin:0 auto;
@@ -96,10 +94,11 @@ font-family: 'Roboto Condensed', sans-serif; */
   transition: all .2s ease-in;
 }
 
+
 /* .cbx에 마우스 오버시 보더 생기기  */
 .cbx:hover::after{
-  border: 20px solid #f00;
-}
+  border: 20px solid; color:rgb(255, 223, 15);
+} 
 
 /* 컨텐츠 타이틀 박스 */
 .cbx h2{

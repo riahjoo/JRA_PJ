@@ -19,8 +19,7 @@
 }
 
 .top{
-  min-height:206px; 
-  
+  min-height:190px;
 }
 
 
@@ -54,7 +53,7 @@
 }
 /* a요소 마우스 오버시 */
 .sns a:hover{
-  opacity:.8;
+  color:rgb(255, 223, 15);
 }
 
 /* 트위터 아이콘박스 */
@@ -147,7 +146,7 @@
   많아지면 높이값 늘어남 */
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px; font-weight:700; 
-  line-height:46px; margin-top:7px;
+  line-height:46px; margin-top:15px;
 }
 
 /* GNB 플렉스 박스 */
@@ -155,8 +154,8 @@
   display:flex; /* 내용만큼 옆으로 나열 */
   flex-wrap:wrap;/* 줄바꿈 가능 */
   justify-content: center;/* 자식요소 가로 중앙정렬 */
-  margin:0 auto; max-width:758px;
-  
+  margin:0 auto; max-width:780px;
+ 
 }
 .gnb li{
   margin:0 23px;
@@ -171,7 +170,7 @@
 }
 
 .gnb a:hover{
-  color:#f00;
+  color:rgb(255, 223, 15);
 }
 
 /**************슬림 상단영역: #top에 .on을 준다*************/
@@ -200,10 +199,10 @@
 /* GNB */
 #top.on .gnb{
     font-size: 14px; box-sizing: border-box;
-    padding:0 107px;/* 양쪽패딩으로 끝에 닿기전에 줄바꿈 되게함 */
+    padding:0 164px;/* 양쪽패딩으로 끝에 닿기전에 줄바꿈 되게함 */
 }
 #top.on .gnb ul{
-  max-width:631px;
+  max-width:652px;
 }
 
 #top.on .gnb li{
@@ -213,7 +212,7 @@
     color:#333;
 }
 #top.on .gnb a:hover{
-  color:#f00;
+  color:rgb(255, 223, 15);
 }
 
  /* *************************모바일 메뉴 영역********************** */      
@@ -399,14 +398,15 @@
 }
 /* 3-1. 하단로고 */
 .blogo{
-  text-align:center;
+  text-align:center; 
 }
-
+.blogo img{
+  width:130px; 
+}
 /* 3-2. 회사주소 */
 .addr{
   color:#747474; font-style:normal;
   text-align:center;
- 
   font-size:11px;
   margin:20px 0 10px; /* 위 20px 양쪽 0 아래 10px */
 }
@@ -440,7 +440,6 @@
   transition: background-color .3s;
 }
 
- 
 
 /* 탑버튼 마우스 오버시 */
 .tbtn:hover {
