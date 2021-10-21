@@ -15,8 +15,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 @import url("https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@latest/nanumbarungothicsubset.css");
 /* font-family: 'NanumBarunGothic', sans-serif; */
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 /* 공통 class */
 
 
@@ -104,7 +103,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 .cbx h2{
   position:absolute; bottom:0; width:100%;
   box-sizing: border-box;
-  font-family:'Pistilli','NanumBarunGothic';
+  font-family:'Fjalla One','NanumBarunGothic';
   font-size:33px; color:#fff; text-align:center;
   padding:50px;
   font-weight:lighter;

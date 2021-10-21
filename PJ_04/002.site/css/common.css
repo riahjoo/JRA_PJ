@@ -225,7 +225,7 @@
   top: 50%;
   transform: translateY(-50%);
   /* 세로중앙이동 */
-  display: none;/* 처음에 안보임 */
+  display: none;/* 처음에 안보임 */ 
 }
 /* 모바일용 햄버거 버튼 */
 .hbtn{
@@ -345,23 +345,25 @@
   background: url(../images/sns_kakao.png) no-repeat center/auto 50%;
 }
 
-/* 1.5-3.매거진박스 */
+/* 1.5-3.모바일 이미지박스 */
 .magbox{    
   margin: 0;
   padding: 10px 30px 0 15px;
   font-family: 'NanumBarunGothic', sans-serif;
+
 }
-/* 잡지커버이미지 */
+/* 모바일 이미지 */
 .mcover img{
   width: 100%;
 }
-/* 잡지설명 */
+/* 브랜드설명 */
 .magbox figcaption{
   font-size: 13px;
-  line-height: 2;
+  line-height: 20px;
   color: #222;
+  margin:10px 0;
 }
-/* 정기구독버튼 */
+/* 매장찾기버튼 */
 .magbtn{
   font-size: 20px;
   background-color: #000;
@@ -443,7 +445,7 @@
 
 /* 탑버튼 마우스 오버시 */
 .tbtn:hover {
-  background-color:#f00;
+  background-color:rgb(255, 223, 15);
 
 }
 
