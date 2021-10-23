@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+
+/* 공사중 외곽선 */
+body {
+  outline: 1px dotted rgb(173, 173, 173);
+} 
+
+
+/* 상단영역 시작*/
+#top{
+  background-color:#575757;
+}
+
+.top{
+  min-height:121px;
+}
+.top_logo{
+  padding-top:15px; width:67px; 
+}
+.top_logo img{
+  width:100%; display:block;
+}
+.gnb{
+
+
+}
+
+
