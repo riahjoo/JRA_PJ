@@ -13,17 +13,32 @@ body {
 }
 
 .top{
-  min-height:121px;
+  min-height:121px; display:flex;
 }
 .top_logo{
-  padding-top:15px; width:67px; 
+  padding-top:15px; margin-right:74px;
 }
 .top_logo img{
-  width:100%; display:block;
+  width:67px;  
 }
+
 .gnb{
-
-
+  min-height:20px; margin-top:52px;
+  font-size:16px; line-height:20px; margin-right:56px;
+}
+.gnb ul{
+  display:flex; flex-wrap: wrap; justify-content: center;  margin:0px auto; 
+  max-width:745px;
+}
+.gnb li{
+  margin:0 25px; 
+}
+.gnb li a{
+  color:#ffffff;
 }
 
+/* sns */
+.sns{
+  display:flex;
+}
 
