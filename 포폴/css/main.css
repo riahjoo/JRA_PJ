@@ -22,6 +22,13 @@ ul#visual_list{
 ul#visual_list li{
     flex:1; margin-right:137px;
 }
+.visual_arrow{
+    width:1200px; 
+    position:absolute; background:blue;
+}
+.left_arrow{
+    background-image: url(../images/left_arrow.png);
+}
 
 ol.bullet{
     left:50%; 
