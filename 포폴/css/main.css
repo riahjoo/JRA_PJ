@@ -7,9 +7,19 @@
 
 /* 상단영역 시작*/
 
-
-
-
+.top_visual{
+width:100%; min-height:623px; 
+box-sizing:border-box;
+}
+.top_visual_inner{
+    width:1013px; margin:0px auto;
+}
+ul#top_visual_list{
+    width:100%; display:flex;
+}
+ul#top_visual_list li{
+    flex:1; margin-right:137px;
+}
 
 
 
