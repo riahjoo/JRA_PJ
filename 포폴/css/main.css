@@ -5,23 +5,36 @@
 @import url(core.css);
 @import url(common.css);
 
-/* 상단영역 시작*/
+/* 비쥬얼영역 시작*/
 
-.top_visual{
-width:100%; min-height:623px; 
+#visual{
+min-height:623px; 
+background-color:#575757; 
 box-sizing:border-box;
+position:relative;
 }
-.top_visual_inner{
+.visual{
     width:1013px; margin:0px auto;
 }
-ul#top_visual_list{
+ul#visual_list{
     width:100%; display:flex;
 }
-ul#top_visual_list li{
+ul#visual_list li{
     flex:1; margin-right:137px;
 }
 
+ol.bullet{
+    left:50%; 
+    transform: translateX(-50%);
+    position:absolute; margin-top:61px;
+}
+ol.bullet li{
+    border-radius: 100%; float:left;
+    width:8px; height:8px;
+    background:#f1f2f2;
+    margin:0 4px;
+}
 
 
-
-/* 상단영역 끝*/
+/* 비쥬얼영역 끝*/
+ 
