@@ -9,11 +9,12 @@ body {
 
 /* 상단영역 시작*/
 #top{
-  background-color:#575757;
+  background-color:#575757; 
 }
 
 .top{
-  min-height:121px; display:flex; position: relative;
+  min-height:121px; display:flex; position: relative; 
+  max-width:1900px; width:100%; background:blue; margin:0 auto;
 }
 .top_logo{
   padding-top:15px; margin-right:74px;
@@ -24,7 +25,7 @@ body {
 
 .gnb{
   min-height:20px; margin-top:52px;
-  font-size:16px; line-height:20px; margin-right:56px;
+  font-size:16px; line-height:20px; margin-right:56px;background:rgb(196, 248, 84);
 }
 .gnb ul{
   display:flex; flex-wrap: wrap; justify-content: center;  margin:0px auto; 
