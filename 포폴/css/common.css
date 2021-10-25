@@ -13,9 +13,9 @@ body {
 }
 
 .top{
-  min-height:121px; position: relative; 
+  min-height:121px; max-width:1900px; width:100%; 
   display:flex; justify-content: center;
-  max-width:1920px; width:100%; 
+  position: relative; 
   margin:0 auto;
 }
 
@@ -29,7 +29,7 @@ body {
 .gnb{
   min-height:20px; margin:0 auto;
   font-size:16px; line-height:20px;
-  padding:0 50px;
+ position: relative;
 }
 .gnb ul{
  max-width:800px; text-align:center;

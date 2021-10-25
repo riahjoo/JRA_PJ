@@ -23,16 +23,24 @@ ul#visual_list li{
     flex:1; margin-right:137px;
 }
 .visual_arrow{
-    width:1200px; 
-    position:absolute; background:blue;
+    width:1200px; height:53px;
+    top:197px; position:absolute; 
+    left:50%; transform: translateX(-50%);
 }
-.left_arrow{
+.visual_arrow span{
+    width:31px; height:53px;display:inline-block;
+}
+
+span.left_arrow{
     background-image: url(../images/left_arrow.png);
+}
+span.right_arrow{
+    background-image: url(../images/right_arrow.png);
+    position:absolute; right:0px;
 }
 
 ol.bullet{
-    left:50%; 
-    transform: translateX(-50%);
+    left:50%; transform: translateX(-50%);
     position:absolute; margin-top:61px;
 }
 ol.bullet li{
