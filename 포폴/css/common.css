@@ -39,7 +39,9 @@ body {
 
 /* sns */
 .sns{
-  display:flex; min-height:20px; margin-top:52px; 
+  display:flex; 
+  height:20px; 
+  position:absolute; right:165px; top:52px;
 }
 .sns a{
   margin:0 9px;
