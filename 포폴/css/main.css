@@ -123,15 +123,17 @@ p.sort{
 .best_size2{
     padding-left:31px;
 }
+
 .best_arrow{
     width:915px; height:53px;
     position:absolute; top:400px; 
     left:50%; transform: translateX(-50%);
 }
+
 .best_left_arrow{
     width:31px; height:100%;
     background-image: url(../images/best_left_arrow.png);
-    display:block;float:left;
+    display:block; float:left;
 }
 .best_right_arrow{
     width:31px; height:100%;
@@ -144,5 +146,4 @@ p.sort{
     width:200px; height:51px; border:2px solid rgb(109, 109, 109);
     display:block; text-align: center; line-height:51px;
     margin:0 auto;
-    
 }
