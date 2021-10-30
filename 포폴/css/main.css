@@ -141,9 +141,11 @@ p.sort{
     display:block; float:right;
 }
 
-
 .detail_btn{
     width:200px; height:51px; border:2px solid rgb(109, 109, 109);
     display:block; text-align: center; line-height:51px;
     margin:0 auto;
+}
+ol.best_b li{
+    background:#575757;
 }
