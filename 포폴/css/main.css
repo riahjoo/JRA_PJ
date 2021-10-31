@@ -169,7 +169,7 @@ ul.best_b li{
     text-align:center; width:100%;
 }
 ul.topp_list{
-    width:100%; display:flex; height:317px;
+    width:100%; display:flex; height:317px; margin-bottom:45px;
 }
 .topp_list li{
    flex:1; margin:0 8px; height:100%; background:#ffffff;
@@ -183,11 +183,17 @@ div.topp_name_tx{
     margin-top:31px;  margin-bottom:26px;
 }
 .topp_name{
-    font-weight:bold; font-size:18px;
+    font-weight:bold; font-size:18px;line-height:24px;
 }
 .topp_list img{
     margin-bottom:25px;
 }
 .topp_text{
-     text-align:center;
+     text-align:center; line-height:24px;
+}
+/* 토핑 영역 끝 */
+
+/* sns 영역 시작 */
+#sns{
+    float:left;
 }
