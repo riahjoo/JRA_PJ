@@ -46,15 +46,15 @@ body {
   position:relative; right:40px; width:280px;
 }
 
-/* sns */
-.sns{
+/* sns_box */
+.sns_box{
   height:20px;  position:absolute; top:55px;
   
 }
-.sns a{
+.sns_box a{
   margin:0 9px; 
 }
-.sns a img{
+.sns_box a img{
   width:21px;
 }
 

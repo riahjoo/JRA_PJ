@@ -196,9 +196,62 @@ div.topp_name_tx{
 /* sns 영역 시작 */
 #sns{
     float:left; width:100%; min-height:1038px;
-    position:relative; background-color: #ffffff;
+     background-color: #ffffff;
 }
 .sns{
-    width:1200px; height:100%; 
-    margin:0 auto; background:blue;
+    width:1200px; height:100%; margin:0 auto;
 }
+.sns_title{
+   text-align:center;
+    margin:120px auto 27px; 
+}
+.detail{
+    margin:0 auto 55px; display:block;  text-align:center;
+}
+#sns_vd_list{
+    width:100%; 
+}
+#sns_vd_list video{
+    width:607px; float:left; margin-right:162px; 
+}
+.sns_vd_list{
+    width:429px; float:left;
+}
+.sns_vd_list li{
+    float:left;
+}
+.sns_vd_list li:first-child{
+    margin-right:41px; margin-bottom:84px; 
+}
+.sns_vd_list li:nth-child(2){
+    margin-bottom:84px; 
+}
+.sns_vd_list li:nth-child(3){
+    margin-right:41px;
+}
+.sns_news{
+    font-weight:bold; line-height:24px;
+}
+/* sns 영역 끝 */
+
+
+/* event 영역 시작 */
+#event{
+    float:left; width:100%; min-height:759px;
+    background-color: #f4f4f4;
+}
+.event{
+    width:1200px; margin:0 auto;
+    position: relative;
+}
+.event_title{
+    margin:120px auto 51px; text-align:center;
+}
+.event_arrow{
+    width:100%; background:blue;
+
+}
+span.left_arrow{
+    background-image: url(../images/left_arrow.png);
+}
+
