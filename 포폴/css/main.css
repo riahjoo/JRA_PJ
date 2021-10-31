@@ -247,11 +247,22 @@ div.topp_name_tx{
 .event_title{
     margin:120px auto 51px; text-align:center;
 }
-.event_arrow{
-    width:100%; background:blue;
-
+div.event_arrow{
+    width:1200px; height:53px;
+    background:blue; position:absolute; left:0; top:264px;
 }
-span.left_arrow{
-    background-image: url(../images/left_arrow.png);
+span.event_left_arrow{
+    background-image: url(../images/best_left_arrow.png);
+    display:block;
+}
+span.event_right_arrow{
+    background-image: url(../images/best_right_arrow.png);
+    display:block;
 }
 
+div.event_contents{
+    width:1011px;  margin:0 auto;
+}
+ul.event_b li{
+    background-color: #575757;
+}
