@@ -5,13 +5,15 @@
 @import url(core.css);
 @import url(common.css);
 
+
+
 /* 비쥬얼영역 시작*/
 
 #visual{
 min-height:623px; 
 background-color:#575757; 
 box-sizing:border-box;
-position:relative;
+position:relative; 
 }
 .visual{
     width:1013px; margin:0px auto;
@@ -39,14 +41,13 @@ span.right_arrow{
     position:absolute; right:0px;
 }
 
-ol.bullet{
-    left:50%; transform: translateX(-50%);
-    position:absolute; margin-top:61px;
+ul.bullet{
+    width:50px; 
+    margin:61px auto 0; display:flex;
 }
-ol.bullet li{
-    border-radius: 100%; float:left;
-    width:8px; height:8px;
-    background:#f1f2f2;
+ul.bullet li{
+    border-radius: 100%; flex:1;
+    width:8px; height:8px; background:#f1f2f2;
     margin:0 4px;
 }
 
@@ -56,15 +57,15 @@ ol.bullet li{
 
 /* best 영역 시작 */
 #best{
-    min-height:1077px; 
-    background-color:#ffffff; 
     box-sizing:border-box;
-    position:relative;  
+    position:relative;  width:100%;  background-color: #ffffff;
+}
+.best{
+    width:100%; height:100%;
 }
 
 .best_title{
-    text-align:center;
-    margin:120px auto 72px;
+    text-align:center; margin:120px auto 72px;
 }
 .title{
     font-size:48px; margin-bottom:11px;
@@ -146,6 +147,47 @@ p.sort{
     display:block; text-align: center; line-height:51px;
     margin:0 auto;
 }
-ol.best_b li{
+ul.best_b{
+     margin-bottom:121px;
+}
+ul.best_b li{
     background:#575757;
+}
+
+/* best 영역 끝 */
+
+/* 토핑 영역 시작 */
+#topp{
+    box-sizing:border-box; float:left;
+    width:100%; min-height:792px; background:#f4f4f4;
+}
+.topp{
+    width:1200px; height:100%; margin:0 auto;  
+}
+.topp_title{
+    margin:120px auto 52px; 
+    text-align:center; width:100%;
+}
+ul.topp_list{
+    width:100%; display:flex; height:317px;
+}
+.topp_list li{
+   flex:1; margin:0 8px; height:100%; background:#ffffff;
+   text-align:center;
+}
+p.topp_sort{
+   margin-top:31px;
+}
+
+div.topp_name_tx{
+    margin-top:31px;  margin-bottom:26px;
+}
+.topp_name{
+    font-weight:bold; font-size:18px;
+}
+.topp_list img{
+    margin-bottom:25px;
+}
+.topp_text{
+     text-align:center;
 }
