@@ -249,15 +249,17 @@ div.topp_name_tx{
 }
 div.event_arrow{
     width:1200px; height:53px;
-    background:blue; position:absolute; left:0; top:264px;
+    position:absolute; left:0; top:264px;
 }
 span.event_left_arrow{
+    width:31px; height:100%;
     background-image: url(../images/best_left_arrow.png);
-    display:block;
+    display:inline-block;
 }
 span.event_right_arrow{
+    width:31px; height:100%;
     background-image: url(../images/best_right_arrow.png);
-    display:block;
+    display:inline-block; position:absolute; right:0;
 }
 
 div.event_contents{
