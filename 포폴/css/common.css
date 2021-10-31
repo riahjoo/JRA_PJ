@@ -15,8 +15,7 @@ body {
 .top{
   min-height:121px; max-width:1900px; width:100%; 
   display:flex; justify-content: center;
-  position: relative; 
-  margin:0 auto;
+  position: relative; margin:0 auto;
 }
 
 .top_logo{
@@ -71,3 +70,72 @@ body {
 .quest span{
   color:#ffffff;
 }
+
+/* 상단영역 끝*/
+
+
+/* 하단영역 시작*/
+#footer{
+  background-color:#575757; clear:both;
+}
+.info{
+  box-sizing: border-box;
+  width:1200px;  margin:0 auto;  
+  display:flex; 
+  padding:40px 0;
+}
+.flogo{
+  margin-right:156px; 
+}
+.flogo img{
+  width: 90px; display:block;
+}
+.addr{
+  font-style:normal; color:#ffffff;
+}
+ul.blink{
+  width:1000px; font-size: 15px; margin-bottom:18px;
+}
+.blink li{
+  display: inline-block;  
+}
+.blink li a{
+  color:#ffffff;
+}
+.blink>li:first-child::before {  
+  content: none;
+}
+
+.blink>li::before {  
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 15px;
+  background-color: #ffffff;
+  margin: 0 20px;
+}
+.addr_info{
+  margin-bottom:18px;
+}
+.info2{
+   margin-bottom:18px;
+}
+.info2 li{
+  display: inline-block; font-size: 15px;
+}
+.info2>li:first-child::before {  
+  content: none;
+}
+.info2>li::before {  
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 15px;
+  background-color: #ffffff;
+  margin: 0 10px;
+}
+
+
+/* 하단영역 끝*/
