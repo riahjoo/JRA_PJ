@@ -58,7 +58,7 @@ ul.bullet li{
 /* best 영역 시작 */
 #best{
     box-sizing:border-box;
-    position:relative;  width:100%;  background-color: #ffffff;
+    position:relative;  width:100%;  background-color: #fff;
 }
 .best{
     width:100%; height:100%;
@@ -69,9 +69,13 @@ ul.bullet li{
 }
 .title{
     font-size:48px; margin-bottom:11px;
+    font-family: 'Noto Sans KR', sans-serif;
+  
 }
 .sub_title{
     font-size:16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    
 }
 ul.best_contents{
     width:900px;
@@ -85,23 +89,22 @@ ul.best_contents{
     margin-bottom:71px; width:915px;  
 }
 p.sort{
-    font-size:11px;
-    width: 59px;
-    line-height: 22px;
+    font-size:12px;
+    width: 59px; line-height: 24px;
     margin:0px auto;
     background-color: #575757;
-    border-radius: 40%; color:white; 
+    border-radius: 50%; color:white; 
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .sort_title{
     margin-top:19px; font-size:32px;
     font-weight:500;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .best_info{
     margin:83px auto 44px; 
-    display:flex; 
-    box-sizing: border-box;
-    justify-content: center;
+    display:flex; box-sizing: border-box; justify-content: center;
 }
 .best_topp{
     display:flex; padding-right:31px;
@@ -111,10 +114,12 @@ p.sort{
     display:inline-block; margin-right:22px;
 }
 .best_topp p{
-    font-size:16px;
+    font-size:16px; font-family: 'Noto Sans KR', sans-serif;
 }
 .best_topp_title{
     display:block; margin-bottom:9px;
+    font-family: 'Noto Sans', sans-serif;
+    color:#2c2c2c;
 }
 
 .best_size1{
@@ -145,7 +150,7 @@ p.sort{
 .detail_btn{
     width:200px; height:51px; border:2px solid rgb(109, 109, 109);
     display:block; text-align: center; line-height:51px;
-    margin:0 auto;
+    margin:0 auto; font-family: 'Noto Sans KR', sans-serif;
 }
 ul.best_b{
      margin-bottom:121px;
@@ -167,6 +172,7 @@ ul.best_b li{
 .topp_title{
     margin:120px auto 52px; 
     text-align:center; width:100%;
+
 }
 ul.topp_list{
     width:100%; display:flex; height:317px; margin-bottom:45px;
@@ -184,12 +190,14 @@ div.topp_name_tx{
 }
 .topp_name{
     font-weight:bold; font-size:18px;line-height:24px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .topp_list img{
     margin-bottom:25px;
 }
 .topp_text{
      text-align:center; line-height:24px;
+     font-family: 'Noto Sans KR', sans-serif;
 }
 /* 토핑 영역 끝 */
 
@@ -207,9 +215,10 @@ div.topp_name_tx{
 }
 .detail{
     margin:0 auto 55px; display:block;  text-align:center;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 #sns_vd_list{
-    width:100%; 
+    width:100%;  
 }
 #sns_vd_list video{
     width:607px; float:left; margin-right:162px; 
@@ -218,19 +227,20 @@ div.topp_name_tx{
     width:429px; float:left;
 }
 .sns_vd_list li{
-    float:left;
+    float:left; font-family: 'Noto Sans KR', sans-serif;
 }
 .sns_vd_list li:first-child{
-    margin-right:41px; margin-bottom:84px; 
+    margin-right:41px; margin-bottom:72px; 
 }
 .sns_vd_list li:nth-child(2){
-    margin-bottom:84px; 
+    margin-bottom:72px; 
 }
 .sns_vd_list li:nth-child(3){
     margin-right:41px;
 }
 .sns_news{
-    font-weight:bold; line-height:24px;
+    font-weight:bold; line-height:28px;
+    margin-bottom:3px;
 }
 /* sns 영역 끝 */
 
@@ -286,16 +296,17 @@ ul.event_b li{
     display:flex; justify-content: space-between;
 }
 .tea_list li{
-    width:362px;
+    width:362px; font-family: 'Noto Sans KR', sans-serif;
 }
 .tea_list_title{
     margin-top:38px; font-weight:bold;
 }
 .tea_list_text{
     margin-top:30px; text-align: justify; margin-bottom:71px;
-    line-height:24px;
+    line-height:24px; 
 }
 a#tea_list_btn{
     display:block; color:#575757;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 /* tea recipe 영역 끝 */
