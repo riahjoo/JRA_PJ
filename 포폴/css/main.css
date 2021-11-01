@@ -22,8 +22,25 @@ ul#visual_list{
     width:100%; display:flex;
 }
 ul#visual_list li{
-    flex:1; margin-right:137px;
+    flex:1; margin-right:137px; display: block;
+    text-align: center;
 }
+ul#visual_list li a{
+    position: relative; text-align: center;
+    margin: 0 auto;  display: block;
+}
+
+/* ul#visual_list li a::after{ 
+    content: ""; position: absolute;  
+    top: 0; left: 0; right: 0;   
+    margin: 0 auto;  background: rgba(0,0,0,0.5);    
+    width: 1012px; height:100%;    border-radius: 60px;    
+    z-index: 10;
+} */
+ul#visual_list img{
+    border-radius: 60px;  vertical-align: top;
+}
+
 .visual_arrow{
     width:1200px; height:53px;
     top:197px; position:absolute; 
@@ -200,7 +217,7 @@ div.topp_name_tx{
      font-family: 'Noto Sans KR', sans-serif;
 }
 .sort_btn{
-    margin-bottom:100px;
+    margin-bottom:110px;
 }
 
 
@@ -224,7 +241,7 @@ div.topp_name_tx{
     font-family: 'Noto Sans KR', sans-serif;
 }
 #sns_vd_list{
-    width:100%;  display:flex; margin-bottom:100px;
+    width:100%;  display:flex; margin-bottom:110px;
 }
 #sns_vd_list video{
     width:50.58%; margin-right:162px; 
@@ -253,7 +270,7 @@ div.topp_name_tx{
 
 /* event 영역 시작 */
 #event{
-    float:left; width:100%; min-height:759px;
+    float:left; width:100%; 
     background-color: #f4f4f4;
 }
 .event{
@@ -261,7 +278,7 @@ div.topp_name_tx{
     position: relative;
 }
 .event_title{
-    margin:120px auto 51px; text-align:center;
+    margin:100px auto 51px; text-align:center;
 }
 div.event_arrow{
     width:1200px; height:53px;
@@ -279,10 +296,13 @@ span.event_right_arrow{
 }
 
 div.event_contents{
-    width:1011px;  margin:0 auto;
+    width:1011px;  margin:0 auto; 
 }
 ul.event_b li{
     background-color: #575757;
+}
+ul.event_b{
+    margin-bottom:110px;
 }
 /* event 영역 끝 */
 
@@ -292,11 +312,10 @@ ul.event_b li{
     background-color: #ffffff;
 }
 .tea{
-    max-width:1300px; margin:0 auto; margin-bottom:120px;
+    max-width:1300px; margin:0 auto; margin-bottom:110px;
 }
 .tea_title{
-    text-align:center;
-    margin:120px auto 71px; 
+    text-align:center; margin:100px auto 71px; 
 }
 .tea_list{
     display:flex; justify-content: space-between;
