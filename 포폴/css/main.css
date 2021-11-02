@@ -10,17 +10,18 @@
 /* 비쥬얼영역 시작*/
 #visual{
     width:100%; min-height:623px; background-color:#575757; box-sizing:border-box;
-    position:relative;  overflow:hidden;
+    position:relative;  
 }
 .visual{
-    width:1200px; margin:0 auto; background:blue;
+    width:1013px; margin:0 auto; 
+    position:relative;
 }
 
 .visual_list{
     width:100%; display:flex;
 }
 .visual_list li{
-    flex:1; margin-right:137px;
+     margin-right:137px;
 }
 
 .visual_list li a{
@@ -28,9 +29,8 @@
     margin: 0 auto;  display: block;
 } 
 
-
 .visual_list li img {
-    display: block; margin:0 auto;
+    display: block; 
     border-radius: 60px;  
 } 
 
@@ -49,20 +49,25 @@
     left:50%; transform: translateX(-50%); z-index:222222;
 }
 
-
 span.left_arrow{
-    background-image: url(../images/left_arrow.png);
+   width: 31px; height: 53px;
+   display:inline-block;
+   background-image: url(../images/left_arrow.png);
 }
 span.right_arrow{
+    width: 31px; height: 53px; display:inline-block;
     background-image: url(../images/right_arrow.png);
-    position:absolute; right:0px;
+    position:absolute; right:0;
 } 
 
-
+ul.bullet{
+    display:flex; width:100%; width:40px; height:8px;
+    margin:0 auto; justify-content: space-between;
+    margin-top:62px;
+}
 ul.bullet li{
-    border-radius: 100%; flex:1;
+    border-radius: 100%; 
     width:8px; height:8px; background:#f1f2f2;
-    margin:0 4px;
 } 
 
 
