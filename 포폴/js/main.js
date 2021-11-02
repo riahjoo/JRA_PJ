@@ -18,36 +18,25 @@ $(window).load(function(){
 
     init() // 초기함수
     visualReset()
-    inEvent()
     onPlay()
+    inEvent()
 
     function init(){
       $visualWrap=$("#visual"); 
       $visualInner=$(".visual"); 
       $visualList=$(".visual_list"); 
       $visualLi=$visualList.children()
-      $visualImg=$(".visual_list img"); 
+      $visualImg=$(".visual_list li img"); 
       $btnImg=$(".visual_arrow span") 
       visualImgNum=$visualLi.size();        
       $visualList.children().last().prependTo($visualList);  
-
-      $visualList.css({
-            border: "1px solid red"
-      });
-      $visualLi.css({
-            border: "2px solid blue"
-      });
-    
      
     }// init 함수
 
     function visualReset(){
         
         visualWidth=$visualInner.innerWidth(); 
-        $visualInner.css({
-            border: "2px solid green"
-          });
-        $visualLi.css({"width":visualWidth})
+        $visualLi.css({"width":visualWidth});
         $visualImg.css({"width":visualWidth*0.9}); 
         $visualList.css({"width":visualWidth*visualImgNum}); 
         $visualWrap.css({"height": $visualImg.outerHeight()}); 
@@ -57,13 +46,13 @@ $(window).load(function(){
 
     function inEvent(){
 
-        $(window).on("resize",visualReset)
-        $(".right_arrow").on("click",onVisualSlideNext)
-        $(".left_arrow").on("click",onVisualSlidePrev)
+        $(window).on("resize",visualReset);
+        $(".right_arrow").on("click",onVisualSlideNext);
+        $(".left_arrow").on("click",onVisualSlidePrev);
 
-        $visualImg.on("mouseleave",onPlay)
-        $visualImg.on("mouseenter",onStop)
-        btnEvent()
+        $visualImg.on("mouseleave",onPlay);
+        $visualImg.on("mouseenter",onStop);
+        btnEvent();
 
     }// inEven 함수 
 
@@ -77,7 +66,7 @@ $(window).load(function(){
 
     function onVisualSlideNext(){
 
-        var currentPosition=$visualList.position().left
+        let currentPosition=$visualList.position().left
 
         $(".visual_list:not(:animated)").animate({"left":currentPosition-visualWidth},400,"easeOutCubic",function(){
 
@@ -90,7 +79,7 @@ $(window).load(function(){
     
     function onVisualSlidePrev(){
 
-        var currentPosition=$visualList.position().left
+        let currentPosition=$visualList.position().left
 
         $(".visual_list:not(:animated)").animate(
             { "left": currentPosition + visualWidth }, 400, "easeOutCubic", function () {
