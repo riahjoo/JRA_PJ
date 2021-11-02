@@ -6,50 +6,116 @@ $(window).load(function(){
 // main visual 슬라이드 
     
 
-    var $visualWrap
-    var $visualInner
-    var $visualList
-    var $visualLi
-    var $visualImg
-    var $btnImg
-    var visualImgNum
-    var visualImgWidth
-    var timer
+    let $visualWrap
+    let $visualInner
+    let $visualList
+    let $visualLi
+    let $visualImg
+    let $btnImg
+    let visualImgNum
+    let visualWidth
+    let timer
 
     init() // 초기함수
     visualReset()
+    inEvent()
+    onPlay()
 
     function init(){
-      $visualWrap=$("#visual"); // 비주얼전체 영역 
-      $visualInner=$(".visual"); // 비주얼 영역 
-      $visualList=$(".visual_list"); // 슬라이드할 비주얼리스트 
-      $visualLi=$visualList.children()// 비주얼리스트의 각 li
-      $visualImg=$(".visual_list img"); // 비주얼리스트안의 각 이미지들 
-      $btnImg=$(".visual_arrow span") // 좌우버튼 이미지 
-      visualImgNum=$visualList.children().size();	// 슬라이드할 비주얼이미지의 총갯수           
-      $visualList.children().last().prependTo($visualList); // 맨마지막 이미지를 왼쪽 처음으로 이동 ( 우측으로 슬라이드 할수있게 붙여줌 ) 
+      $visualWrap=$("#visual"); 
+      $visualInner=$(".visual"); 
+      $visualList=$(".visual_list"); 
+      $visualLi=$visualList.children()
+      $visualImg=$(".visual_list img"); 
+      $btnImg=$(".visual_arrow span") 
+      visualImgNum=$visualLi.size();        
+      $visualList.children().last().prependTo($visualList);  
 
       $visualList.css({
-          border: "1px solid red"
+            border: "1px solid red"
       });
-      $visualList.children().last().css({
-        border: "2px solid blue"
+      $visualLi.css({
+            border: "2px solid blue"
       });
-
+    
      
     }// init 함수
 
     function visualReset(){
-
-        visualImgWidth=$visualInner.innerWidth(); 
-        $visualLi.css({"width":visualImgWidth})
-        $visualImg.css({"width":visualImgWidth}); 
+        
+        visualWidth=$visualInner.innerWidth(); 
+        $visualInner.css({
+            border: "2px solid green"
+          });
+        $visualLi.css({"width":visualWidth})
+        $visualImg.css({"width":visualWidth*0.9}); 
+        $visualList.css({"width":visualWidth*visualImgNum}); 
         $visualWrap.css({"height": $visualImg.outerHeight()}); 
-       
-        $visualList.css({"width":visualImgWidth*visualImgNum}); 
-        $visualList.css({"left": -visualImgWidth*2}); 
+        $visualList.css({"left": -visualWidth*2}); 
+
+    }// visualReset 함수 : 초기 설정
+
+    function inEvent(){
+
+        $(window).on("resize",visualReset)
+        $(".right_arrow").on("click",onVisualSlideNext)
+        $(".left_arrow").on("click",onVisualSlidePrev)
+
+        $visualImg.on("mouseleave",onPlay)
+        $visualImg.on("mouseenter",onStop)
+        btnEvent()
+
+    }// inEven 함수 
+
+
+    function btnEvent(){
+
+        $btnImg.on("mouseenter",onStop)
+        $btnImg.on("mouseleave",onPlay)
+
+    }// btnEvent 함수 : 마우스 이벤트
+
+    function onVisualSlideNext(){
+
+        var currentPosition=$visualList.position().left
+
+        $(".visual_list:not(:animated)").animate({"left":currentPosition-visualWidth},400,"easeOutCubic",function(){
+
+            $visualList.children().first().appendTo($visualList)
+            $visualList.css({"left":-visualWidth*2})
+
+        })
+
+    }// 왼쪽으로 애니메이션 (슬라이드) 
+    
+    function onVisualSlidePrev(){
+
+        var currentPosition=$visualList.position().left
+
+        $(".visual_list:not(:animated)").animate(
+            { "left": currentPosition + visualWidth }, 400, "easeOutCubic", function () {
+
+            $visualList.children().last().prependTo($visualList)
+            $visualList.css({ "left": -visualWidth*2 })
+
+        })
+
+    }// 오른쪽으로 에니메이션 (슬라이드) 
+
+
+    function onPlay(){
+
+        timer=setInterval(onVisualSlideNext,3000) 
+
     }
-          
+
+    function onStop(){
+
+        clearInterval(timer) 
+
+    }
+  
+  
 
 
  });

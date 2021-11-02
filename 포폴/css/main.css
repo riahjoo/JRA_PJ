@@ -17,20 +17,17 @@
     position:relative;
 }
 
-.visual_list{
-    width:100%; display:flex;
-}
-.visual_list li{
-     margin-right:137px;
+ul.visual_list{
+    width:100%; display:flex; position:relative; left:0px; top:0px;
 }
 
-.visual_list li a{
+ul.visual_list li a{
     position: relative; text-align: center;
     margin: 0 auto;  display: block;
 } 
 
-.visual_list li img {
-    display: block; 
+ul.visual_list li img {
+    display: block; margin:0 auto;
     border-radius: 60px;  
 } 
 
