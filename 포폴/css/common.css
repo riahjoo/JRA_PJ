@@ -25,25 +25,25 @@ p,a{
 .top{
   min-height:121px; max-width:1900px; width:100%; 
   display:flex; align-items: center;
-  position: relative; margin:0 auto;
+  position: relative; margin:0 auto;background:blue;
 }
 
 .top_logo{
   padding-left:40px; display:flex; align-items: center;
 } 
 .top_logo img{
-  width:67px;  
+  width:67px;  display:block;
 }
 .gnb{
-  width:60%;
+  width:750px;
   min-height:20px; margin:0 auto;
-  font-size:16px; line-height:20px; position: relative;
+  font-size:16px; line-height:20px; position: relative; 
 }
 .gnb ul{
   text-align:center; 
 }
 .gnb li{
-  display: inline-block; vertical-align: middle; padding: 0 30px;
+  display: inline-block; vertical-align: middle; padding: 0 28px;
 }
 .gnb li a{
   color:#ffffff; 
