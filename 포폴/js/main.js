@@ -51,6 +51,15 @@ $(window).on('load',function () {
             "left": -visualWidth * 2
         });
 
+        if($(window).innerWidth()<=1200){
+            $visualImg.css({
+                "width":visualWidth
+            });
+            $visualWrap.css({
+                "height": $visualImg.innerHeight()+136
+            });
+        }
+        
 
     } // visualReset 함수 : 초기 설정
 

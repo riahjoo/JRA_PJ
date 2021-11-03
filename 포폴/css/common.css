@@ -58,8 +58,8 @@ p,a{
 
 /* sns_box */
 .sns_box{
-  height:20px; line-height:120px;
-
+  line-height:120px;
+  
 }
 .sns_box a{
   margin:0 9px; 
@@ -74,9 +74,11 @@ p,a{
   border-radius: 0 0 15% 15%;
   background-color: #c30e2e; text-align: center; 
   font-family: 'Noto Sans KR', sans-serif;
+ 
 }
 .quest p{
    margin-top:20px; color:#fff;
+   font-weight: bold;
    
 }
 .quest span{

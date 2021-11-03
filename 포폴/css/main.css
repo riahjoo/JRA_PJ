@@ -23,7 +23,7 @@ ul.visual_list{
 
 ul.visual_list li img {
     display: block; margin:0 auto;
-    border-radius: 60px;  
+    /* border-radius: 60px;   */
 } 
 
 .visual_arrow{
