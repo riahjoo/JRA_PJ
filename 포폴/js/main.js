@@ -1,10 +1,7 @@
+$(window).load(function () {
 
+    // main visual 슬라이드 
 
-
-$(window).load(function(){
-
-// main visual 슬라이드 
-    
 
     let $visualWrap
     let $visualInner
@@ -21,90 +18,107 @@ $(window).load(function(){
     onPlay()
     inEvent()
 
-    function init(){
-      $visualWrap=$("#visual"); 
-      $visualInner=$(".visual"); 
-      $visualList=$(".visual_list"); 
-      $visualLi=$visualList.children()
-      $visualImg=$(".visual_list li img"); 
-      $btnImg=$(".visual_arrow span") 
-      visualImgNum=$visualLi.size();        
-      $visualList.children().last().prependTo($visualList);  
-     
-    }// init 함수
+    function init() {
+        $visualWrap = $("#visual");
+        $visualInner = $(".visual");
+        $visualList = $(".visual_list");
+        $visualLi = $visualList.children()
+        $visualImg = $(".visual_list li img");
+        $btnImg = $(".visual_arrow span")
+        visualImgNum = $visualLi.size();
+        $visualList.children().last().prependTo($visualList);
 
-    function visualReset(){
-        
-        visualWidth=$visualInner.innerWidth(); 
-        $visualLi.css({"width":visualWidth});
-        $visualImg.css({"width":visualWidth*0.9}); 
-        $visualList.css({"width":visualWidth*visualImgNum}); 
-        $visualWrap.css({"height": $visualImg.outerHeight()}); 
-        $visualList.css({"left": -visualWidth*2}); 
+    } // init 함수
 
-    }// visualReset 함수 : 초기 설정
+    function visualReset() {
 
-    function inEvent(){
+        visualWidth = $visualInner.innerWidth();
+        $visualLi.css({
+            "width": visualWidth
+        });
+        $visualImg.css({
+            "width": visualWidth * 0.9
+        });
+        $visualList.css({
+            "width": visualWidth * visualImgNum
+        });
+        $visualWrap.css({
+            "height": $visualImg.outerHeight()
+        });
+        $visualList.css({
+            "left": -visualWidth * 2
+        });
 
-        $(window).on("resize",visualReset);
-        $(".right_arrow").on("click",onVisualSlideNext);
-        $(".left_arrow").on("click",onVisualSlidePrev);
+    } // visualReset 함수 : 초기 설정
 
-        $visualImg.on("mouseleave",onPlay);
-        $visualImg.on("mouseenter",onStop);
+    function inEvent() {
+
+        $(window).on("resize", visualReset);
+        $(".right_arrow").on("click", onVisualSlideNext);
+        $(".left_arrow").on("click", onVisualSlidePrev);
+
+        $visualImg.on("mouseleave", onPlay);
+        $visualImg.on("mouseenter", onStop);
         btnEvent();
 
-    }// inEven 함수 
+    } // inEven 함수 
 
 
-    function btnEvent(){
+    function btnEvent() {
 
-        $btnImg.on("mouseenter",onStop)
-        $btnImg.on("mouseleave",onPlay)
+        $btnImg.on("mouseenter", onStop)
+        $btnImg.on("mouseleave", onPlay)
 
-    }// btnEvent 함수 : 마우스 이벤트
+    } // btnEvent 함수 : 마우스 이벤트
 
-    function onVisualSlideNext(){
+    function onVisualSlideNext() {
 
-        let currentPosition=$visualList.position().left
+        let currentPosition = $visualList.position().left
 
-        $(".visual_list:not(:animated)").animate({"left":currentPosition-visualWidth},400,"easeOutCubic",function(){
+        $(".visual_list:not(:animated)").animate({
+            "left": currentPosition - visualWidth
+        }, 400, "easeOutCubic", function () {
 
             $visualList.children().first().appendTo($visualList)
-            $visualList.css({"left":-visualWidth*2})
+            $visualList.css({
+                "left": -visualWidth * 2
+            })
 
         })
 
-    }// 왼쪽으로 애니메이션 (슬라이드) 
-    
-    function onVisualSlidePrev(){
+    } // 왼쪽으로 애니메이션 (슬라이드) 
 
-        let currentPosition=$visualList.position().left
+    function onVisualSlidePrev() {
 
-        $(".visual_list:not(:animated)").animate(
-            { "left": currentPosition + visualWidth }, 400, "easeOutCubic", function () {
+        let currentPosition = $visualList.position().left
+
+        $(".visual_list:not(:animated)").animate({
+            "left": currentPosition + visualWidth
+        }, 400, "easeOutCubic", function () {
 
             $visualList.children().last().prependTo($visualList)
-            $visualList.css({ "left": -visualWidth*2 })
+            $visualList.css({
+                "left": -visualWidth * 2
+            })
 
         })
 
-    }// 오른쪽으로 에니메이션 (슬라이드) 
+    } // 오른쪽으로 에니메이션 (슬라이드) 
 
 
-    function onPlay(){
+    function onPlay() {
 
-        timer=setInterval(onVisualSlideNext,3000) 
+        timer = setInterval(onVisualSlideNext, 3000)
+
+    }
+
+    function onStop() {
+
+        clearInterval(timer)
 
     }
 
-    function onStop(){
-
-        clearInterval(timer) 
-
-    }
-  
-  
 
 
- });
+
+});
