@@ -1,6 +1,3 @@
-
-
-
 $(window).load(function () {
 
     // main visual 슬라이드 
@@ -40,17 +37,27 @@ $(window).load(function () {
             "width": visualWidth
         });
         $visualImg.css({
-            "width": visualWidth * 0.9
+            "width": visualWidth * 0.84
+        });
+        $visualImg.css({
+            "border": "2px solid red"
         });
         $visualList.css({
             "width": visualWidth * visualImgNum
         });
         $visualWrap.css({
-            "height": $visualImg.outerHeight()
+            "height": $visualImg.innerHeight()+136
+        });
+        $visualWrap.css({
+            "border": "1px solid blue"
         });
         $visualList.css({
             "left": -visualWidth * 2
         });
+
+
+        
+     
 
     } // visualReset 함수 : 초기 설정
 

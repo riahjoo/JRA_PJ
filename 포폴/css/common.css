@@ -25,14 +25,14 @@ p,a{
 .top{
   min-height:121px; max-width:1900px; width:100%; 
   display:flex; align-items: center;
-  position: relative; margin:0 auto;background:blue;
+  position: relative; margin:0 auto; 
 }
 
 .top_logo{
   padding-left:40px; display:flex; align-items: center;
 } 
 .top_logo img{
-  width:67px;  display:block;
+  width:62px;  display:block;
 }
 .gnb{
   width:750px;
@@ -81,6 +81,10 @@ p,a{
 }
 .quest span{
   color:#fff;
+}
+
+.mobilemenu{
+   display:none; position:absolute; right:40px; 
 }
 
 /* 상단영역 끝*/

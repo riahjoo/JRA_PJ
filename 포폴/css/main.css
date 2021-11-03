@@ -9,12 +9,12 @@
 
 /* 비쥬얼영역 시작*/
 #visual{
-    width:100%; min-height:623px; background-color:#575757; box-sizing:border-box;
-    position:relative;  
+    width:100%;  background-color:#575757; box-sizing:border-box;
+    position:relative;   overflow: hidden;
 }
 .visual{
-    width:1013px; margin:0 auto; 
-    position:relative;
+    width:1200px; margin:0 auto; 
+    position:relative; 
 }
 
 ul.visual_list{
@@ -27,7 +27,7 @@ ul.visual_list li img {
 } 
 
 .visual_arrow{
-    width:1060px; height:53px;
+    width:1200px; height:53px;
     top:197px; position:absolute; 
     left:50%; transform: translateX(-50%); z-index:222222;
 }

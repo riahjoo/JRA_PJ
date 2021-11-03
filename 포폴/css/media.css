@@ -10,15 +10,33 @@
     .gnb,.quest,.sns_box{
         display:none;
     }
-  
-    
+    .mobilemenu{
+        display:block;
+    }
+    header.top{
+        min-height: auto;
+        height:90px;
+    }
+    .mobilemenu img{
+        width:30px; display:block;
+    }
+    .top_logo img{
+        width:40px;
+    }
+    .visual_arrow{
+        display:none;
+    }
 }
 
 @media only screen and (max-width:1100px) {
 
-    .visual{
-        width: 100%;
-    }
+    
     
 
 }
+@media only screen and (max-width:490px) {
+    
+}
+
+
+
