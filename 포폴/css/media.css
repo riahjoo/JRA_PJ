@@ -4,8 +4,9 @@
 
 @media only screen and (max-width:1200px) {
 
-    .visual{
-        width: 100%;
+    
+    .visual_arrow{
+        display:none;
     }
     .gnb,.quest,.sns_box{
         display:none;
@@ -15,7 +16,7 @@
     }
     header.top{
         min-height: auto;
-        height:90px;
+        height:70px;
     }
     .mobilemenu img{
         width:30px; display:block;
@@ -23,20 +24,20 @@
     .top_logo img{
         width:40px;
     }
-    .visual_arrow{
+    .visual{
         display:none;
     }
+    .swiper{
+        display:block;
+    }
+    
 }
 
-@media only screen and (max-width:1100px) {
-
+@media only screen and (max-width:750px) {
+   
     
     
 
 }
-@media only screen and (max-width:490px) {
-    
-}
-
 
 

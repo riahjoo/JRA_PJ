@@ -1,65 +1,50 @@
+
+
 $(window).on('load',function () {
 
     // main visual 슬라이드 
 
-
-    let $visualWrap
-    let $visualInner
-    let $visualList
-    let $visualLi
-    let $visualImg
-    let $btnImg
+    let visualInner
+    let visualList
+    let visualLi
+    let visualImg
+    let btnImg
     let visualImgNum
     let visualWidth
     let timer
 
-    init() // 초기함수
-    visualReset()
-    onPlay()
-    inEvent()
+    init(); // 초기함수
+    visualReset();
+    onPlay();
+    inEvent();
 
     function init() {
-        $visualWrap = $("#visual");
-        $visualInner = $(".visual");
-        $visualList = $(".visual_list");
-        $visualLi = $visualList.children()
-        $visualImg = $(".visual_list li img");
-        $btnImg = $(".visual_arrow span");
-        visualImgNum = $visualLi.length;
-        $visualList.children().last().prependTo($visualList);
+        visualInner = $(".visual");
+        visualList = $(".visual_list");
+        visualLi = visualList.children()
+        visualImg = $(".visual_list li img");
+        btnImg = $(".visual_arrow span");
+        visualImgNum = visualLi.length;
+        visualList.children().last().prependTo(visualList);
 
     } // init 함수
 
     function visualReset() {
 
-        visualWidth = $visualInner.width();
-        $visualLi.css({
-            "width": visualWidth
+        visualWidth = visualInner.width();
+        visualLi.css({
+            width : visualWidth
         });
-        $visualImg.css({
-            "width": visualWidth * 0.84
+        visualImg.css({
+            width: visualWidth * 0.84
         });
        
-        $visualList.css({
-            "width": visualWidth * visualImgNum
+        visualList.css({
+            width : visualWidth * visualImgNum,
+            left : -visualWidth * 2
         });
-        $visualWrap.css({
-            "height": $visualImg.innerHeight()+136
-        });
-        
-        $visualList.css({
-            "left": -visualWidth * 2
-        });
-
-        if($(window).innerWidth()<=1200){
-            $visualImg.css({
-                "width":visualWidth
-            });
-            $visualWrap.css({
-                "height": $visualImg.innerHeight()+136
-            });
-        }
-        
+               
+               
 
     } // visualReset 함수 : 초기 설정
 
@@ -69,8 +54,8 @@ $(window).on('load',function () {
         $(".right_arrow").on("click", onVisualSlideNext);
         $(".left_arrow").on("click", onVisualSlidePrev);
 
-        $visualImg.on("mouseleave", onPlay);
-        $visualImg.on("mouseenter", onStop);
+        visualImg.on("mouseleave", onPlay);
+        visualImg.on("mouseenter", onStop);
         btnEvent();
 
     } // inEven 함수 
@@ -78,22 +63,22 @@ $(window).on('load',function () {
 
     function btnEvent() {
 
-        $btnImg.on("mouseenter", onStop)
-        $btnImg.on("mouseleave", onPlay)
+        btnImg.on("mouseenter", onStop)
+        btnImg.on("mouseleave", onPlay)
 
     } // btnEvent 함수 : 마우스 이벤트
 
     function onVisualSlideNext() {
 
-        let currentPosition = $visualList.position().left
+        let currentPosition = visualList.position().left
 
         $(".visual_list:not(:animated)").animate({
-            "left": currentPosition - visualWidth
+            left : currentPosition - visualWidth
         }, 400, "easeOutCubic", function () {
 
-            $visualList.children().first().appendTo($visualList)
-            $visualList.css({
-                "left": -visualWidth * 2
+            visualList.children().first().appendTo(visualList)
+            visualList.css({
+                 left : -visualWidth * 2
             })
 
         })
@@ -102,15 +87,15 @@ $(window).on('load',function () {
 
     function onVisualSlidePrev() {
 
-        let currentPosition = $visualList.position().left
+        let currentPosition = visualList.position().left
 
         $(".visual_list:not(:animated)").animate({
-            "left": currentPosition + visualWidth
+            left : currentPosition + visualWidth
         }, 400, "easeOutCubic", function () {
 
-            $visualList.children().last().prependTo($visualList)
-            $visualList.css({
-                "left": -visualWidth * 2
+            visualList.children().last().prependTo(visualList)
+            visualList.css({
+                left : -visualWidth * 2
             })
 
         })
@@ -131,6 +116,26 @@ $(window).on('load',function () {
     }
 
 
+   
 
+    let swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+   
 
 });
+
+
