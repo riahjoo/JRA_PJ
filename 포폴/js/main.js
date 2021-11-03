@@ -134,6 +134,25 @@ $(window).on('load',function () {
           prevEl: ".swiper-button-prev",
         },
       });
+
+    
+
+    if($(window).innerWidth()<750){
+
+        mobileImage()
+
+    }
+
+    function mobileImage(){
+
+
+        let idx = $(".swiper-wrapper").children().index();
+
+        console.log("순번:"+idx);
+
+
+    }///////// 모바일 이미지로 변경(세로형)
+    
    
 
 });
