@@ -1,6 +1,4 @@
-
-
-$(window).on('load',function () {
+$(window).on('load', function () {
 
     // main visual 슬라이드 
 
@@ -33,18 +31,18 @@ $(window).on('load',function () {
 
         visualWidth = visualInner.width();
         visualLi.css({
-            width : visualWidth
+            width: visualWidth
         });
         visualImg.css({
             width: visualWidth * 0.84
         });
-       
+
         visualList.css({
-            width : visualWidth * visualImgNum,
-            left : -visualWidth * 2
+            width: visualWidth * visualImgNum,
+            left: -visualWidth * 2
         });
-               
-               
+
+
 
     } // visualReset 함수 : 초기 설정
 
@@ -73,12 +71,12 @@ $(window).on('load',function () {
         let currentPosition = visualList.position().left
 
         $(".visual_list:not(:animated)").animate({
-            left : currentPosition - visualWidth
+            left: currentPosition - visualWidth
         }, 400, "easeOutCubic", function () {
 
             visualList.children().first().appendTo(visualList)
             visualList.css({
-                 left : -visualWidth * 2
+                left: -visualWidth * 2
             })
 
         })
@@ -90,12 +88,12 @@ $(window).on('load',function () {
         let currentPosition = visualList.position().left
 
         $(".visual_list:not(:animated)").animate({
-            left : currentPosition + visualWidth
+            left: currentPosition + visualWidth
         }, 400, "easeOutCubic", function () {
 
             visualList.children().last().prependTo(visualList)
             visualList.css({
-                left : -visualWidth * 2
+                left: -visualWidth * 2
             })
 
         })
@@ -116,45 +114,52 @@ $(window).on('load',function () {
     }
 
 
-   
+
 
     let swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
+        loop: true,
         autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
+            delay: 2500,
+            disableOnInteraction: false,
         },
         pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+            el: ".swiper-pagination",
+            clickable: true,
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
-      });
+    }); // swiper //
 
-    
 
-    if($(window).innerWidth()<750){
+
+
+
+    ///////// 모바일 이미지로 변경(세로형)
+    if ($(window).innerWidth() < 750) {
 
         mobileImage()
 
-    }
+    } // if문 (width : 750px이하 일때 함수 실행)
 
-    function mobileImage(){
+    function mobileImage() {
+
+        let mi = $(".swiper-wrapper").children(); // mobile image
+        let ich;// image change
+
+        for (i = 0; i < 6; i++) {
+
+            ich = mi.eq(i).children();
+            ich.attr("src", "images/top_Mimg0" + (i + 1) + ".gif");
+
+        } // for문
 
 
-        let idx = $(".swiper-wrapper").children().index();
-
-        console.log("순번:"+idx);
+    } /////// 모바일 이미지로 변경(세로형)함수
 
 
-    }///////// 모바일 이미지로 변경(세로형)
-    
-   
 
 });
-
-
