@@ -21,7 +21,7 @@ $(window).on('load', function () {
         visualList = $(".visual_list");
         visualLi = visualList.children()
         visualImg = $(".visual_list li img");
-        btnImg = $(".visual_arrow span");
+        btnImg = $(".visual_arrow img");
         visualImgNum = visualLi.length;
         visualList.children().last().prependTo(visualList);
 
@@ -67,13 +67,15 @@ $(window).on('load', function () {
     } // btnEvent 함수 : 마우스 이벤트
 
     function onVisualSlideNext() {
+       
 
         let currentPosition = visualList.position().left
 
         $(".visual_list:not(:animated)").animate({
             left: currentPosition - visualWidth
+          
         }, 400, "easeOutCubic", function () {
-
+          
             visualList.children().first().appendTo(visualList)
             visualList.css({
                 left: -visualWidth * 2
@@ -138,12 +140,12 @@ $(window).on('load', function () {
 
 
 $(document).ready(function(){
-
+   
     ///////// 모바일 이미지로 변경(세로형)
     if ($(window).innerWidth() < 750) {
 
         mobileImage()
-
+       
     } // if문 (width : 750px이하 일때 함수 실행)
 
 
@@ -161,6 +163,8 @@ $(document).ready(function(){
         } // for문
        
     } /////// 모바일 이미지로 변경(세로형)함수
+
+     
 
 
 })

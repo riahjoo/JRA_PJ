@@ -10,7 +10,7 @@
 /* 비쥬얼영역 시작*/
 #visual {
     width: 100%;
-    background-color: #575757;
+    background-color: rgb(87, 87, 87);
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
@@ -34,7 +34,9 @@ ul.visual_list li img {
     display: block;
     margin: 0 auto;
     border-radius: 60px;
+    box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.205);
 }
+
 
 .visual_arrow {
     width: 1200px;
@@ -46,18 +48,18 @@ ul.visual_list li img {
     z-index: 222222;
 }
 
-.visual_arrow>span:hover {
+.visual_arrow>img:hover {
     cursor: pointer;
 }
 
-span.left_arrow {
+.left_arrow {
     width: 31px;
     height: 53px;
     display: inline-block;
     background-image: url(../images/left_arrow.png);
 }
 
-span.right_arrow {
+.right_arrow {
     width: 31px;
     height: 53px;
     display: inline-block;
