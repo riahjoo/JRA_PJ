@@ -115,7 +115,6 @@ $(window).on('load', function () {
 
 
 
-
     let swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
@@ -135,8 +134,10 @@ $(window).on('load', function () {
     }); // swiper //
 
 
+});
 
 
+$(document).ready(function(){
 
     ///////// 모바일 이미지로 변경(세로형)
     if ($(window).innerWidth() < 750) {
@@ -145,21 +146,21 @@ $(window).on('load', function () {
 
     } // if문 (width : 750px이하 일때 함수 실행)
 
+
     function mobileImage() {
 
         let mi = $(".swiper-wrapper").children(); // mobile image
         let ich;// image change
 
-        for (i = 0; i < 6; i++) {
-
+        for (i = 0; i < 5; i++) {
+            
             ich = mi.eq(i).children();
-            ich.attr("src", "images/top_Mimg0" + (i + 1) + ".gif");
-
+            console.log(i)
+            ich.attr("src", "images/top_Mimg0" + (i+1) + ".gif");
+       
         } // for문
-
-
+       
     } /////// 모바일 이미지로 변경(세로형)함수
 
 
-
-});
+})
