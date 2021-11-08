@@ -77,9 +77,7 @@ $(window).on('load', function () {
            bestList.css({
                left: -bestWidth * 2
            })
-           let pm = $(".sort").text()
-           console.log(pm)
-
+           
        })
 
    } // 왼쪽으로 애니메이션 (슬라이드) 
@@ -159,7 +157,7 @@ let sinfo = {
 
 $(function(){
     
-    // let pm = $(".sort").text();
+    let pm = $(".best_contents").sort").text();
     // console.log(pm);
 
     // let data = sinfo[pm];
@@ -167,6 +165,7 @@ $(function(){
     // let bestToppImg = $(".sort_img img");
 
     // bestToppImg.attr("src",data["이미지"]);
+
 
 
     

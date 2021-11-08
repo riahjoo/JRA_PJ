@@ -10,9 +10,12 @@ $(window).on('load', function () {
     let visualImgNum
     let visualWidth
     let timer
+    let dot
+    let visualOverNum=0
 
     init(); // 초기함수
     visualReset();
+    onShowDot(0);
     onPlay();
     inEvent();
 
@@ -24,6 +27,7 @@ $(window).on('load', function () {
         btnImg = $(".visual_arrow img");
         visualImgNum = visualLi.length;
         visualList.children().last().prependTo(visualList);
+        dot = $(".bullet").children();
 
     } // init 함수
 
@@ -41,8 +45,7 @@ $(window).on('load', function () {
             width: visualWidth * visualImgNum,
             left: -visualWidth * 2
         });
-
-
+       
 
     } // visualReset 함수 : 초기 설정
 
@@ -51,48 +54,91 @@ $(window).on('load', function () {
         $(window).on("resize", visualReset);
         $(".right_arrow").on("click", onVisualSlideNext);
         $(".left_arrow").on("click", onVisualSlidePrev);
-
+       
+        
         visualImg.on("mouseleave", onPlay);
         visualImg.on("mouseenter", onStop);
         btnEvent();
 
-    } // inEven 함수 
 
+    } // inEven 함수 
+    let bdx;
+
+    function onDotOver(){ // 마우스를 dot 에 올릴때 실행할 함수 
+        onStop();
+        bdx=$(this).index();// 마우스를 올린 dot 순번을 구함 
+        visualOverNum=bdx;
+        if(visualOverNum === visualImgNum) visualOverNum = 0;
+        console.log("blulit순서:"+bdx);
+        
+        onVisualSlide(visualOverNum);// 실패..
+        onShowDot(visualOverNum);  // 성공..
+
+    }/////////////////////////모르겠어요ㅠㅠ...
+
+
+
+    function onVisualSlide(overNum){ // 매개변수에 따른 비주얼 리스트를 슬라이드 하는 함수 
+               
+        $(".visual_list:not(:animated)").animate({
+            "left":-visualWidth*overNum}
+            ,500,"easeOutCubic")
+
+    }//////////////////////////모르겠어요ㅠㅠ...
+
+   
+    function onShowDot(overNum){ // 매개변수에 따른 dot 배경색을 활성화 하는 함수 
+
+        dot.removeClass("selected"); // 기존에 활성화된 배경색 모두 해제 
+        dot.eq(overNum).addClass("selected") // 선택된 dot 에만 활성화 배경색 적용 
+  
+    }
+  
 
     function btnEvent() {
 
         btnImg.on("mouseenter", onStop)
         btnImg.on("mouseleave", onPlay)
+        dot.on("mouseenter", onDotOver)	
+        dot.on("mouseleave", onPlay)
+        // 마우스를 dot에 올릴때 실행할 함수 적용 
 
     } // btnEvent 함수 : 마우스 이벤트
 
+
+
     function onVisualSlideNext() {
 
-
+       
         let currentPosition = visualList.position().left
-
+        
         $(".visual_list:not(:animated)").animate({
             left: currentPosition - visualWidth
 
         }, 400, "easeOutCubic", function () {
-
+            visualOverNum++;
+            if(visualOverNum === visualImgNum) visualOverNum = 0;
+            onShowDot(visualOverNum) 
             visualList.children().first().appendTo(visualList)
             visualList.css({
                 left: -visualWidth * 2
             })
-
+            
         })
 
     } // 왼쪽으로 애니메이션 (슬라이드) 
+    
 
     function onVisualSlidePrev() {
-
+        
         let currentPosition = visualList.position().left
 
         $(".visual_list:not(:animated)").animate({
             left: currentPosition + visualWidth
         }, 400, "easeOutCubic", function () {
-
+            visualOverNum--;
+            if(visualOverNum === -1) visualOverNum= visualImgNum-1;
+            onShowDot(visualOverNum) 
             visualList.children().last().prependTo(visualList)
             visualList.css({
                 left: -visualWidth * 2
@@ -103,10 +149,13 @@ $(window).on('load', function () {
     } // 오른쪽으로 에니메이션 (슬라이드) 
 
 
+
+
+
     function onPlay() {
 
         timer = setInterval(onVisualSlideNext, 3000)
-
+      
     }
 
     function onStop() {
