@@ -93,7 +93,7 @@ ul.bullet li.selected {
 }
 
 
-.swiper-slide img {
+.mySwiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -107,6 +107,7 @@ ul.bullet li.selected {
 
 
 
+  
 /* 비쥬얼영역 끝*/
 
 
@@ -152,7 +153,7 @@ ul.best_contents {
     display: flex;
     position: relative;
     left: 0px; 
-    top: 0px;
+    top: 0px; text-align: center
 }
 
 .best_contents li {
@@ -160,8 +161,8 @@ ul.best_contents {
 }
 
 .best_sort {
-    margin-bottom: 71px;
     width: 900px; font-family: 'Noto Sans KR', sans-serif;
+    margin:0 auto 71px;
 }
 
 p.sort {
@@ -252,7 +253,7 @@ p.sort {
     display: block;
     text-align: center;
     line-height: 51px;
-    margin: 0 auto;
+    margin: 0 auto; position:relative;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -262,6 +263,34 @@ ul.best_b {
 
 ul.best_b li {
     background: #575757;
+}
+
+.swiper .mySwiper2{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+}
+
+.mySwiper2 .swiper-slide{
+    text-align: center; 
+}
+div.mySwiper2 {
+    padding-bottom:100px;
+}
+.mySwiper2 .swiper-wrapper{
+    margin-bottom:60px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    color:#575757;
+    font-weight: bold;
+}
+.detail_btn:hover{
+    background:#9c112b;
+    color:#ffffff;
+
 }
 
 /* best 영역 끝 */
@@ -276,8 +305,8 @@ ul.best_b li {
 
 .topp {
     width: 1200px;
-    height: 100%;
-    margin: 0 auto;
+    min-height: 794px;
+    margin: 0 auto; position:relative;
 }
 
 .topp_title {
@@ -295,10 +324,11 @@ ul.topp_list {
 }
 
 .topp_list li {
-    width: 285px;
+    width: 23.75%;
     background: #ffffff;
-    text-align: center;
+    text-align: center; height:317px;
 }
+
 
 p.topp_sort {
     margin-top: 31px;
@@ -326,9 +356,6 @@ div.topp_name_tx {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.sort_btn {
-    margin-bottom: 110px;
-}
 
 
 /* 토핑 영역 끝 */

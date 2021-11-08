@@ -33,13 +33,38 @@
     .top::before{
         display:none;
     }
+    .swiper .mySwiper2{
+        display:block;
+    }
+    .best{
+        display:none;
+    }
+    .best_sort{
+        width:100%;text-align: center
+    }
+    .topp_list li:nth-child(2),.topp_list li:first-child {
+        margin-bottom:30px;
+    }
+    
+    
 
 }
 
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:900px) {
    
+    .topp_list li{
+        width:40%;
+    }
+    ul.topp_list {
+        flex-wrap: wrap;
+        justify-content: space-evenly ;
+        height: 634px;
+        
+    }
     
-    
+    .sort_btn {
+        margin:100px auto;
+    }
 }
 
 

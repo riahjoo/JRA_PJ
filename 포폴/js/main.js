@@ -69,7 +69,7 @@ $(window).on('load', function () {
         bdx=$(this).index();// 마우스를 올린 dot 순번을 구함 
         visualOverNum=bdx;
         if(visualOverNum === visualImgNum) visualOverNum = 0;
-        console.log("blulit순서:"+bdx);
+        
         
         onVisualSlide(visualOverNum);// 실패..
         onShowDot(visualOverNum);  // 성공..
@@ -177,12 +177,11 @@ $(window).on('load', function () {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+        }
+       
     }); // swiper //
+
+    
 
 
 });
