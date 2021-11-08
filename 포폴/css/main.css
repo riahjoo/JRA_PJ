@@ -79,8 +79,11 @@ ul.bullet li {
     height: 8px;
     background: #f1f2f2;
     display:inline-block; margin:0 1px;
+    transition:0.2s ease;
 }
-
+ul.bullet li.selected {
+    background:#970a23;
+}
 /* 비쥬얼 모바일 */
 
 .swiper {
@@ -111,7 +114,7 @@ ul.bullet li {
 #best {
     box-sizing: border-box;
     position: relative;
-    width: 100%;
+    width: 100%; overflow: hidden;
     background-color: #fff;
 }
 
@@ -138,20 +141,27 @@ ul.bullet li {
 
 }
 
-ul.best_contents {
-    width: 900px;
-    display: flex;
+div#best_contents{
+    width: 900px;  position: relative;
     margin: 0 auto;
 }
 
+
+ul.best_contents {
+    width: 100%;
+    display: flex;
+    position: relative;
+    left: 0px; 
+    top: 0px;
+}
+
 .best_contents li {
-    flex: 1;
     text-align: center;
 }
 
 .best_sort {
     margin-bottom: 71px;
-    width: 915px;
+    width: 900px; font-family: 'Noto Sans KR', sans-serif;
 }
 
 p.sort {
@@ -162,14 +172,12 @@ p.sort {
     background-color: #575757;
     border-radius: 50%;
     color: white;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .sort_title {
     margin-top: 19px;
     font-size: 32px;
     font-weight: 500;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .best_info {
@@ -223,7 +231,6 @@ p.sort {
 .best_left_arrow {
     width: 31px;
     height: 100%;
-    background-image: url(../images/best_left_arrow.png);
     display: block;
     float: left;
 }
@@ -231,11 +238,13 @@ p.sort {
 .best_right_arrow {
     width: 31px;
     height: 100%;
-    background-image: url(../images/best_right_arrow.png);
     display: block;
     float: right;
 }
-
+.best_arrow>img:hover {
+    cursor: pointer; 
+    
+}
 .detail_btn {
     width: 200px;
     height: 51px;
