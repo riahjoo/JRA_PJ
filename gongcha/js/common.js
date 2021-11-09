@@ -2,7 +2,8 @@
 
 
 $(window).on('load', function () {
-
+    
+    
 
     let swiper = new Swiper(".mySwiper3", {
         spaceBetween: 30,
@@ -23,8 +24,33 @@ $(window).on('load', function () {
     });
 
 
- 
+// sns 영역
+snsVD()
 
+    
+
+
+    function snsVD() {
+        
+        let vdLi = $(".sns_vd_list li");
+        let vdLidx;
+        let vd = $(".sns_vd");
+
+        
+        vdLi.children("a").click(function () {
+
+            vdLidx = $(this).parent().index();
+            vd.attr("src","./video/sns_video0"+(vdLidx+1)+".mp4");
+        
+            return false;
+
+        })
+
+        
+    } 
+
+    
 })
+
 
 

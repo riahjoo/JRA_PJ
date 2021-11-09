@@ -428,7 +428,12 @@ div.topp_name_tx {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1.6rem;
 }
-
+.sns_vd_list li img{
+    display:block;
+}
+.sns_vd_list a{
+  display:block;
+}
 .sns_news {
     font-weight: bold;
     line-height: 28px;
