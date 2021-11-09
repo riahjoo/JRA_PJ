@@ -37,12 +37,12 @@ snsVD()
         let vd = $(".sns_vd");
 
         
-        vdLi.children("a").click(function () {
+        vdLi.children("div").click(function () {
 
             vdLidx = $(this).parent().index();
             vd.attr("src","./video/sns_video0"+(vdLidx+1)+".mp4");
         
-            return false;
+            
 
         })
 
