@@ -9,7 +9,6 @@
   overflow: hidden;
 }
 
-
 .KR{
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -17,11 +16,15 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
+html{
+  font-size:10px;
+}
 
 .LH{
   line-height:21px;
 }
-p,a{
+
+div,p,a{
   color:#272727;
 }
 /* 상단영역 시작*/
@@ -74,7 +77,8 @@ p,a{
 #mainmenu>li>a{
   line-height:121px; padding:0 30px;
   position:relative; font-family: 'Noto Sans', sans-serif;
-  top:0;
+  top:0; 
+  font-size:1.6rem;
 }
 
 #mainmenu>li a{
@@ -181,12 +185,13 @@ ul.submenu li a{
   width: 90px; display:block;
 }
 .addr{
+  width:1000px;
   font-style:normal; font-size: 14px;
   font-family: 'Noto Sans KR', sans-serif;  color:#fff; 
-  font-weight:100;
+  font-weight:100; 
 }
 ul.blink{
-  width:1000px; margin-bottom:18px;
+   margin-bottom:18px;
 }
 .blink li{
   display: inline-block;  

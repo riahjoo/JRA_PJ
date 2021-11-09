@@ -7,6 +7,7 @@ $(window).on('load', function () {
     let swiper = new Swiper(".mySwiper3", {
         spaceBetween: 30,
         centeredSlides: true,
+        loop: true,
         autoplay: {
         delay: 2500,
         disableOnInteraction: false,

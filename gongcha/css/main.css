@@ -134,14 +134,14 @@ ul.bullet li.selected {
 }
 
 .title {
-    font-size: 48px;
-    margin-bottom: 11px;
+    font-size: 4.8rem;
+    margin-bottom: 11px; letter-spacing:2px;
     font-family: 'Noto Sans KR', sans-serif;
 
 }
 
 .sub_title {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Noto Sans KR', sans-serif;
 
 }
@@ -174,23 +174,24 @@ ul.best_contents {
 
 p.sort {
     font-size: 12px;
-    width: 59px;
-    line-height: 24px;
+    width: 54px;
+    line-height: 2;
     margin: 0px auto;
-    background-color: #575757;
-    border-radius: 50%;
+    background-color: #751527;
+    border-radius: 30px;
     color: white;
 }
 
 .sort_title {
     margin-top: 19px;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 500;
+    color:#751527;
 }
 
 .best_info {
     margin: 83px auto 44px;
-    display: flex;
+    display: flex;font-size: 16px;
     box-sizing: border-box;
     justify-content: center;
 }
@@ -207,7 +208,7 @@ p.sort {
 }
 
 .best_topp p {
-    font-size: 16px;
+    
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -263,7 +264,7 @@ p.sort {
     text-align: center;
     line-height: 51px;
     margin: 0 auto;
-    position: relative;
+    position: relative; font-size:16px;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -352,12 +353,11 @@ p.topp_sort {
 
 div.topp_name_tx {
     margin-top: 31px;
-    margin-bottom: 26px;
+    margin-bottom: 26px;font-size: 1.8rem;
 }
 
 .topp_name {
     font-weight: bold;
-    font-size: 18px;
     line-height: 24px;
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -368,10 +368,9 @@ div.topp_name_tx {
 
 .topp_text {
     text-align: center;
-    line-height: 24px;
+    line-height: 24px; font-size: 1.6rem;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
 
 
 /* 토핑 영역 끝 */
@@ -380,7 +379,8 @@ div.topp_name_tx {
 /* sns 영역 시작 */
 #sns {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #ffffff; 
+    display:flex;
 }
 
 .sns {
@@ -396,9 +396,13 @@ div.topp_name_tx {
 
 .detail {
     margin-bottom: 55px;
-    display: block;
+    display: block; font-size: 1.6rem;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
+
+}
+.detail:hover{
+    color:#b6213c; font-weight: bold;
 }
 
 #sns_vd_list {
@@ -422,6 +426,7 @@ div.topp_name_tx {
 
 .sns_vd_list li {
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.6rem;
 }
 
 .sns_news {
@@ -513,7 +518,7 @@ ul.tea_list {
 }
 
 .tea_list li {
-    width: 362px;
+    width: 362px; font-size: 1.6rem;
     font-family: 'Noto Sans KR', sans-serif;
 }
 .tea_list li img{
@@ -534,9 +539,21 @@ ul.tea_list {
 }
 
 a#tea_list_btn {
-    display: block;
+    display: block; 
     color: #575757;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
+a#tea_list_btn:hover{
+    color:#b6213c;
+}
 /* tea recipe 영역 끝 */
+
+
+
+
+
+
+
+
+
+
