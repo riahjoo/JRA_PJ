@@ -61,7 +61,21 @@ $(window).on('load', function () {
         btnEvent();
 
 
-    } // inEven 함수 
+    } // inEvent 함수 
+
+    
+    function btnEvent() {
+
+        btnImg.on("mouseenter", onStop)
+        btnImg.on("mouseleave", onPlay)
+        dot.on("mouseenter", onDotOver)	
+        dot.on("mouseleave", onPlay)
+        // 마우스를 dot에 올릴때 실행할 함수 적용 
+
+    } // btnEvent 함수 : 마우스 이벤트
+
+
+
     let bdx;
 
     function onDotOver(){ // 마우스를 dot 에 올릴때 실행할 함수 
@@ -95,15 +109,6 @@ $(window).on('load', function () {
     }
   
 
-    function btnEvent() {
-
-        btnImg.on("mouseenter", onStop)
-        btnImg.on("mouseleave", onPlay)
-        dot.on("mouseenter", onDotOver)	
-        dot.on("mouseleave", onPlay)
-        // 마우스를 dot에 올릴때 실행할 함수 적용 
-
-    } // btnEvent 함수 : 마우스 이벤트
 
 
 
