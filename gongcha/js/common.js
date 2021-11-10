@@ -25,30 +25,33 @@ $(window).on('load', function () {
 
 
 // sns 영역
-snsVD()
 
     
-
-
-    function snsVD() {
-        
         let vdLi = $(".sns_vd_list li");
         let vdLidx;
         let vd = $(".sns_vd");
-
+      
         
-        vdLi.children("div").click(function () {
+        vdLi.children("div").on("click",function () {
 
             vdLidx = $(this).parent().index();
             vd.attr("src","./video/sns_video0"+(vdLidx+1)+".mp4");
-        
+
+        });
+
+        vdLi.children("div").on("mouseenter",function () {
+
+            vdLidx =  $(this).parent().index();
+            $(this).children().attr("src","./images/sns_img0"+(vdLidx+1)+".jpg")
             
+        });
 
-        })
+        vdLi.children("div").on("mouseleave",function () {
 
-        
-    } 
-
+            vdLidx =  $(this).parent().index();
+            $(this).children().attr("src","./images/snsbg_img0"+(vdLidx+1)+".gif")
+            
+        });
     
 })
 

@@ -433,14 +433,16 @@ div.topp_name_tx {
     width:100%;
 }
 .sns_vd_list li img{
-    display:block;
+    display:block; position:relative; left:0; top:0;
 }
-
-.sns_vd_list div::after{
-    content:url(../images/sns_bg.png);
-    position:absolute;
+.sns_bg{
+    display:block;position:absolute;
     left:0; top:0; width:100%;
 }
+/* .sns_vd_list div::after{
+    content:url(../images/sns_bg.png);
+    
+} */
 
 .sns_vd_list div:hover{
   cursor: pointer;
