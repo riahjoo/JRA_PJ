@@ -267,7 +267,7 @@ ul.blink{
    margin-bottom:18px;
 }
 .info2 li{
-  display: inline-block; font-size: 14px;
+  display: inline-block; font-size: 1.4rem;
 }
 .info2>li:first-child::before {  
   content: none;
