@@ -48,10 +48,12 @@ $(function () {
             scSts = 0;
             console.log("실행1");
             tm.addClass("on");
+
         } else if (scTop < 100 && scSts === 0) {
             scSts = 1;
             console.log("실행2");
             tm.removeClass("on");
+
         }
 
     })
@@ -219,6 +221,28 @@ $(window).on('load', function () {
             $(this).data("isOpen",false)
         })
     }
+
+    // 토핑영역
+    onTopping()
+   
+    function onTopping(){ //
+
+
+
+        if ($(window).width() >= 900) {
+
+        
+            $(".topp_list li").hover(function(){
+
+                $(this).toggleClass("toppOn");
+
+            })
+    
+        }
+
+    
+    }
+
 
 
 

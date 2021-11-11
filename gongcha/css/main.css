@@ -266,6 +266,7 @@ p.sort {
     margin: 0 auto;
     position: relative; font-size:16px;
     font-family: 'Noto Sans KR', sans-serif;
+    transition: all 0.4s ease-in-out;
 }
 
 ul.best_b {
@@ -345,8 +346,14 @@ ul.topp_list {
     background: #ffffff;
     text-align: center;
     height: 317px;
+    transition:all 0.4s ease-in;
 }
 
+.topp_list li.toppOn {
+    border: 2px solid #751527;
+    transform:translateY(-20px);
+    box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.205);
+}
 
 p.topp_sort {
     margin-top: 31px;

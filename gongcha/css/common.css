@@ -48,7 +48,7 @@ div#total_wrap {
   /*모든 문서를 감싸는 #total_wrap 지정 */
   width: 100%;
   position: absolute;
-  left: 0px;
+  left: 0px; 
   top: 0px;
 }
 
