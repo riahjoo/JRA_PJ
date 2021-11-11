@@ -115,7 +115,7 @@
 			// 이벤트 대상: #indic li -> indic변수
 			// 이벤트 종류: click 
 			/////////////////////////////////////////////////
-			indic.click(function () {
+			indic.mouseenter(function () {
 
 				///// 광클금지 //////
 				if (sprot) return;
@@ -204,7 +204,7 @@
 				// 먼저 슬라이드번호(snum)에 블릿순번을 넣어준다!
 				snum = bseq;
 				// 블릿변경함수 호출!
-				chgIndic();	
+				chgIndic();
 
 			}); ///////////// click //////////////////////////
 
@@ -238,6 +238,13 @@
 			background-color: #05184D;
 		}
 
+		/* 위치를 이동하기위한 박스 */
+		.wrap {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
 		/* 공통class */
 		.bld {
 			/* 숨김클래스 */
@@ -255,15 +262,14 @@
 		/* 슬라이드 전체박스 */
 		#slider {
 			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
-			/* 세로중앙이동 */
+			left: -50%;
 			width: 600px;
-			max-width: 90%;/* 양쪽에 여백있게 */
+			max-width: 90%;
+			/* 양쪽에 여백있게 */
 			margin: 0 auto;
 			/* 가로중앙 마영오! */
-			background-color: #FFF;
-			border: 2px solid #FDF6DD;
+			/* background-color: #FFF; */
+			border: 2px solid transparent;
 		}
 
 		/* 가상요소로 비율밀기! */
@@ -280,7 +286,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			overflow: hidden;
+			/* overflow: hidden; */
 		}
 
 		/* 슬라이드 이동박스 */
@@ -291,8 +297,8 @@
 			/* 기준위치값 */
 			display: flex;
 			/* 플랙스박스 */
-			width: 400%;
-			/* 사진4장 */
+			width: 800%;
+			/* 사진8장 */
 			height: 100%;
 
 			/* 3無 */
@@ -303,6 +309,7 @@
 
 		#viewer li {
 			flex: 1;
+			margin: 0 1%;
 		}
 
 		/* 각 슬라이드 이미지 셋팅 */
@@ -327,8 +334,8 @@
 		/* 블릿표시자 */
 		#indic {
 			position: absolute;
-			bottom: 5px;
-			right: 5px;
+			bottom: 5%;
+			right: -95%;
 
 			display: flex;
 			/* 플랙스박스 */
@@ -336,6 +343,7 @@
 			margin: 0;
 			padding: 0;
 			list-style: none;
+			z-index: 9999;
 		}
 
 		#indic li {
@@ -378,29 +386,31 @@
 
 		/* 왼쪽버튼 */
 		.lb {
-			left: -50px;
+			left: 104%;
 			background: url(image/btn_shop_bn_left.png) no-repeat;
 		}
 
 		/* 오른쪽버튼 */
 		.rb {
-			right: -50px;
+			left: 192%;
 			background: url(image/btn_shop_bn_right.png) no-repeat;
 		}
 
 		/* 미디어쿼리 */
 		@media only screen and (max-width:800px) {
-			
+
 			/* 이동버튼 위치변경하기 */
-			.lb{
+			.lb {
 				left: 20px;
 			}
-			.rb{
+
+			.rb {
 				right: 20px;
 			}
-			
-		} /* 미디어쿼리 800px 이하 */
 
+		}
+
+		/* 미디어쿼리 800px 이하 */
 	</style>
 
 </head>
@@ -408,37 +418,37 @@
 
 <body>
 
-	<div id="slider">
-
-		<!-- 슬라이드 속박스 -->
-		<div id="viewer">
-			<!-- 슬라이드 이동박스 -->
-			<ul>
-				<li class="sld1"><span class="ir">슬라이드1</span></li>
-				<li class="sld2"><span class="ir">슬라이드2</span></li>
-				<li class="sld3"><span class="ir">슬라이드3</span></li>
-				<li class="sld4"><span class="ir">슬라이드4</span></li>
+	<div class="wrap">
+		<div id="slider">
+			<!-- 슬라이드 속박스 -->
+			<div id="viewer">
+				<!-- 슬라이드 이동박스 -->
+				<ul>
+					<li class="sld1"><span class="ir">슬라이드1</span></li>
+					<li class="sld2"><span class="ir">슬라이드2</span></li>
+					<li class="sld3"><span class="ir">슬라이드3</span></li>
+					<li class="sld4"><span class="ir">슬라이드4</span></li>
+					<li class="sld1"><span class="ir">슬라이드1</span></li>
+					<li class="sld2"><span class="ir">슬라이드2</span></li>
+					<li class="sld3"><span class="ir">슬라이드3</span></li>
+					<li class="sld4"><span class="ir">슬라이드4</span></li>
+				</ul>
+			</div>
+			<!-- 블릿표시자 -->
+			<ul id="indic">
+				<li class="on"><a href="#"><span class="bld">블릿</span></a></li>
+				<li><a href="#"><span class="bld">블릿</span></a></li>
+				<li><a href="#"><span class="bld">블릿</span></a></li>
+				<li><a href="#"><span class="bld">블릿</span></a></li>
 			</ul>
+			<!-- 양쪽이동버튼 -->
+			<a href="#" class="abtn lb">
+				<span class="ir">왼쪽이동버튼</span>
+			</a>
+			<a href="#" class="abtn rb">
+				<span class="ir">오른쪽이동버튼</span>
+			</a>
 		</div>
-
-		<!-- 블릿표시자 -->
-		<ul id="indic">
-			<li class="on"><a href="#"><span class="bld">블릿</span></a></li>
-			<li><a href="#"><span class="bld">블릿</span></a></li>
-			<li><a href="#"><span class="bld">블릿</span></a></li>
-			<li><a href="#"><span class="bld">블릿</span></a></li>
-		</ul>
-
-		<!-- 양쪽이동버튼 -->
-		<a href="#" class="abtn lb">
-			<span class="ir">왼쪽이동버튼</span>
-		</a>
-		<a href="#" class="abtn rb">
-			<span class="ir">오른쪽이동버튼</span>
-		</a>
-
-
-
 	</div>
 
 	<!---------- jQuery code Start ---------->
