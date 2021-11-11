@@ -14,15 +14,21 @@
     .mobilemenu{
         display:block;
     }
+    #top{
+        min-height:auto; position:fixed; top:0; left:0;
+        width:100%;background-color:#816555; 
+    }
+    .visualSW{
+        margin-top:70px;
+    }
     header.top{
-        min-height: auto;
         height:70px;
     }
     .mobilemenu img{
-        width:30px; display:block;
+        width:35px; display:block;
     }
     .top_logo img{
-        width:40px;
+        width:35px;
     }
     .visual{
         display:none;
