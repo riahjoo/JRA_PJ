@@ -133,25 +133,19 @@
         font-size: 12px;
 
     }
-
-}
-
-
-@media only screen and (max-width:1000px) {
-
     #sns_vd_list video {
         width: 500px;
         margin: 0 auto 50px;
     }
 
     .sns_vd_list {
-        flex-wrap: nowrap;
         width: 100%;
         justify-content: space-evenly;
     }
 
-
 }
+
+
 
 @media only screen and (max-width:900px) {
 
