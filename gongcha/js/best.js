@@ -10,6 +10,8 @@ $(window).on('load', function () {
     let bestImgNum
     let bestWidth
     let timer
+    let bestOverNum = 0
+    let bestDot
 
     bestInit(); // 초기함수
     bestReset();
@@ -24,6 +26,7 @@ $(window).on('load', function () {
         bestBtnImg = $(".best_arrow img");
         bestImgNum = bestLi.length;
         bestList.children().last().prependTo(bestList);
+        bestDot = $(".best_b li");
     } // init 함수
   
     function bestReset() {
@@ -62,7 +65,24 @@ $(window).on('load', function () {
 
     } // bestBtnEvent 함수 : 마우스 이벤트
 
-    let Num=1;
+   
+    let Num=1;//종류 순번
+   
+
+    function  sortOn(bb) {
+
+        let pm = "종류"+bb; // 종류 문자 담는 변수
+        let tx = pm.toString(); // 문자화
+        let data = binfo[tx];
+        $(".best_topp img").attr("src", data["이미지"]);
+        $(".best_topp_sort").text(data["토핑"]);
+        $(".best_topp_priceL").text(data["large"]);
+        $(".best_topp_priceJ").text(data["jumbo"]);
+       
+
+    }// best_info 부분 내용 변경.
+
+   
 
     function onbestSlideNext() {
        
@@ -75,6 +95,11 @@ $(window).on('load', function () {
             Num++;
             if (Num > bestImgNum) Num = 1;
             sortOn(Num);
+
+            bestOverNum++;
+            if (bestOverNum === bestImgNum) bestOverNum = 0;
+            onBestShowDot(bestOverNum)
+
             bestList.children().first().appendTo(bestList)
             bestList.css({
                 left: -bestWidth * 2
@@ -84,32 +109,6 @@ $(window).on('load', function () {
       
 
     } // 왼쪽으로 애니메이션 (슬라이드) 
-
-    let pm; 
-    console.log(pm);
-
-    let data;
-
-    let bestToppImg = $(".best_topp img");
-
-    bestList.children("li").eq(2).css({
-
-        border: "2px solid blue"
-
-    })
-
-    
-
-    function  sortOn(bb) {
-
-        pm = "종류"+bb;
-        let tx = pm.toString();
-        data = sinfo[tx];
-        bestToppImg.attr("src", data["이미지"]);
-       
-
-    }// best_info 부분 내용 변경.
-
 
     function onbestSlidePrev() {
 
@@ -121,6 +120,11 @@ $(window).on('load', function () {
             Num--;
             if (Num === 0) Num = bestImgNum;
             sortOn(Num);
+
+            bestOverNum--;
+            if (bestOverNum === -1) bestOverNum = bestImgNum - 1;
+            onBestShowDot(bestOverNum);
+
             bestList.children().last().prependTo(bestList)
             bestList.css({
                 left: -bestWidth * 2
@@ -130,6 +134,13 @@ $(window).on('load', function () {
         })
 
     } // 오른쪽으로 에니메이션 (슬라이드) 
+
+
+    function onBestShowDot() {
+        bestDot.eq(bestOverNum).addClass("selected").siblings().removeClass("selected"); 
+        
+
+    } // bullet 보여주기
 
 
     function bestOnPlay() {
@@ -161,8 +172,8 @@ $(window).on('load', function () {
 
 
 
-    ///// 각 서브별 데이터 셋팅하기 /////
-    let sinfo = {
+    ///// 각 데이터 셋팅하기 /////
+    let binfo = {
         "종류1": {
             "이미지": "./images/best_topp.jpg",
             "토핑": "펄(타피오카)",
@@ -195,7 +206,7 @@ $(window).on('load', function () {
 
         },
 
-    }; ////////// sinfo ////////////////
+    }; ////////// best_info 부분 데이터 세팅 ////////////////
 
   
 })
