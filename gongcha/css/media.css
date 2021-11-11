@@ -138,7 +138,7 @@
 
 @media only screen and (max-width:500px) {
     ul.tea_list {
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
     }
     
     .tea_list li{
@@ -167,4 +167,8 @@
    .sort_btn {
     margin-top:220px;
     }
+    .bestSW img{
+        width:130px;
+    }
+    
 }
