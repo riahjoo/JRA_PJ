@@ -118,7 +118,6 @@ $(window).on('load', function () {
 
     // 모바일 메뉴 작동
 
-    let totalWrap = $("#total_wrap");
     let mobileMenuWrap = $("#mobilemenu");
     let mobileBtn = $(".mobilemenu");
     let mobileCloseBtn = $("#mobile_close_btn");
@@ -146,9 +145,7 @@ $(window).on('load', function () {
 
     function mobileMenuOpen() {
 
-        totalWrap.css({
-            "position": "fixed"
-        })
+        
 
         mobileGrayLayer.show()
         mobileGrayLayer.prependTo(mobileMenuWrap)
