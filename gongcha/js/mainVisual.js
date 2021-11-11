@@ -172,7 +172,7 @@ $(document).ready(function () {
         for (i = 0; i < 5; i++) {
 
             ich = mi.eq(i).children();
-            console.log(i)
+          
             ich.attr("src", "images/top_Mimg0" + (i + 1) + ".gif");
 
         } // for문

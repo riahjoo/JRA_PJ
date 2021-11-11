@@ -39,19 +39,19 @@ $(function () {
 
 
         scTop = $(this).scrollTop();
-        console.log("스위:" + scTop);
+       
 
         if (mob) return;
 
         if (scTop >= 100 && scSts === 1) {
 
             scSts = 0;
-            console.log("실행1");
+          
             tm.addClass("on");
 
         } else if (scTop < 100 && scSts === 0) {
             scSts = 1;
-            console.log("실행2");
+            
             tm.removeClass("on");
 
         }
@@ -180,7 +180,7 @@ $(window).on('load', function () {
 
     function onMobileMenuClick() {
 
-        console.log("진행")
+        
         if ($(this).data("isOpen") == false) {
 
             onMobileMenuClose()
