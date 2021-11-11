@@ -123,7 +123,7 @@ $(window).on('load', function () {
     let mobileBtn = $(".mobilemenu");
     let mobileCloseBtn = $("#mobile_close_btn");
     let mobileGrayLayer = $("<div id='mobile_graylayer'></div>");
-    let mobileMenuWidth = $(window).outerWidth();
+    let mobileMenuWidth = $(window).innerWidth();
     let openHeight;
     let closeHeight = 63;
     let mobileMenu = $(".mobile_mainmenu>li");

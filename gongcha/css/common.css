@@ -50,14 +50,6 @@ a {
 }
 
 
-div#total_wrap {
-  /*모든 문서를 감싸는 #total_wrap 지정 */
-  width: 100%;
-  position: absolute;
-  left: 0px; 
-  top: 0px;
-}
-
 
 /* 상단영역 시작*/
 #top {
@@ -441,8 +433,6 @@ div#mobile_graylayer{
   opacity:0.8; position:fixed; left:0px; top:0px; 
 }
 
-
-
 /* 모바일영역 끝 */
 
 /* 상단영역 끝*/
@@ -450,8 +440,8 @@ div#mobile_graylayer{
 
 /* 하단영역 시작*/
 #footer {
-  background-color: #575757;
-  clear: both;
+  background-color: #575757; width:100%;
+  min-height:280px;
 }
 
 .info {
