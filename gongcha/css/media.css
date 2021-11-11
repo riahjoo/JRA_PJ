@@ -3,7 +3,7 @@
 
 
 @media only screen and (max-width:1200px) {
-
+   
 
     .visual_arrow {
         display: none;
@@ -14,16 +14,15 @@
     .sns_box {
         display: none;
     }
-
+    
+    #mobilemenu{
+        display:block;
+    }
     .mobilemenu {
         display: block;
     }
 
-    .mobilemenu img {
-        width: 35px;
-        display: block;
-    }
-
+   
     #top {
         min-height: auto;
         position: fixed;

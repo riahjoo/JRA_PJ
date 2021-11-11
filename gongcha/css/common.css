@@ -210,11 +210,21 @@ ul.submenu li:hover a{
 .quest span{
   color:#fff; font-size:14px;
 }
+/* 모바일메뉴 */
 
-.mobilemenu{
-   display:none; position:absolute; right:20px; 
+#mobilemenu {
+  display:none;
 }
 
+.mobilemenu{
+    position:absolute; right:20px; 
+   
+}
+
+.mobilemenu img {
+  width: 30px;
+  display: block;
+}
 
 
 
