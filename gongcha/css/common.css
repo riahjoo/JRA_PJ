@@ -23,6 +23,15 @@ html{
   line-height:21px;
 }
 
+/* 마진 */
+.tm{
+  margin-top:100px;
+}
+.bm{
+  margin-bottom:110px;
+}
+
+
 div,p,a{
   color:#272727;
 }
@@ -203,7 +212,7 @@ ul.submenu li:hover a{
 }
 
 .mobilemenu{
-   display:none; position:absolute; right:40px; 
+   display:none; position:absolute; right:20px; 
 }
 
 
