@@ -129,9 +129,7 @@ $(window).on('load', function () {
     let mobileIcon = $(".mobile_icon");
 
 
-    totalWrap.css({
-        "height": $(document).innerHeight()
-    });
+    
     mobileMenuWrap.css({
         "width": mobileMenuWidth,
         "height": $(window).innerHeight(),
@@ -157,9 +155,7 @@ $(window).on('load', function () {
 
 
     function mobileMenuClose() {
-        totalWrap.css({
-            "position": "absolute"
-        })
+       
         mobileGrayLayer.hide()
         mobileMenuWrap.animate({
             "right": -mobileMenuWidth
@@ -239,7 +235,6 @@ $(window).on('load', function () {
 
     
     }
-
 
 
 
