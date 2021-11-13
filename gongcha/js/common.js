@@ -143,7 +143,6 @@ $(window).on('load', function () {
 
     function mobileMenuOpen() {
 
-        
 
         mobileGrayLayer.show()
         mobileGrayLayer.prependTo(mobileMenuWrap)
