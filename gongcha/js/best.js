@@ -17,6 +17,7 @@ $(window).on('load', function () {
     bestReset();
     bestOnPlay();
     bestInEvent();
+    onBestShowDot(0);
 
     function bestInit() {
         bestInner = $("#best_contents");
@@ -135,7 +136,7 @@ $(window).on('load', function () {
 
     } // 오른쪽으로 에니메이션 (슬라이드) 
 
-
+    
     function onBestShowDot() {
         bestDot.eq(bestOverNum).addClass("selected").siblings().removeClass("selected"); 
         
