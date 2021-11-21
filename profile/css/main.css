@@ -8,109 +8,184 @@
 
 /* section1 시작 */
 
-.section1_cbx{
-    display:flex; margin-top:200px; 
-}
-.me{
-    margin-right:200px; margin-top:50px;
+.section1_cbx {
+    display: flex;
+    margin-top: 200px;
 }
 
-.cv_btn{
-    text-align:center; line-height:40px; display:block;
-    border:solid 1px #3d6d93; border-radius: 50%; width:138px;
-    margin-top:50px;
+.me {
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.cv_btn {
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    border: solid 1px #3d6d93;
+    border-radius: 50%;
+    width: 138px;
+    margin-top: 50px;
 }
 
 /* section1 끝 */
 
 /* section2 시작 */
 
-#skills_list{
-    width:100%; 
-    display:flex; 
-    flex-wrap: wrap; justify-content: space-between;
+#skills_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-#skills_list li.brk{
+
+#skills_list li.brk {
     flex-basis: 100%;
-    height: 0; margin-bottom:0;
+    height: 0;
+    margin-bottom: 0;
     border: none;
 }
 
-#skills_list li{
-    width:278px; height:240px; margin-bottom:47px;
-    border:solid 1px #3d6d93; border-radius: 25px;
-    padding:0 25px; box-sizing: border-box;
+#skills_list li {
+    width: 278px;
+    height: 240px;
+    margin-bottom: 47px;
+    border: solid 1px #3d6d93;
+    border-radius: 25px;
+    padding: 0 25px;
+    box-sizing: border-box;
 }
-#skills_list li img{
-    margin:28px auto; display:block; 
-    width:90px;
+
+#skills_list li img {
+    margin: 28px auto;
+    display: block;
+    width: 90px;
 }
-p.text_title{
-    margin-bottom:10px; font-weight:bold;
+
+p.text_title {
+    margin-bottom: 10px;
+    font-weight: bold;
 }
-p.skill_t{
-    line-height:21px; font-size:12px;
+
+p.skill_t {
+    line-height: 21px;
+    font-size: 12px;
 }
+
 /* section2 끝 */
 
 /* section3 시작 */
 
-.sec3_contents{
-    width:1200px; margin:0 auto; 
+.sec3_contents {
+    width: 1200px;
+    margin: 0 auto;
 }
 
-.border{
-    width:100%; height:1px; background-color: #3d6d93;
-    margin-bottom:78px;
+.border {
+    width: 100%;
+    height: 1px;
+    background-color: #3d6d93;
+    margin-bottom: 78px;
 }
-.port_contents{
-    width:100%; display:flex; 
+
+.port_contents {
+    width: 100%;
+    display: flex;
 }
-.port_img{
-    width:590px; margin-right:204px;
+
+
+.swiper {
+    width: 100%;
+
 }
-.port_img_bg{
-    width:100%; height:401px; 
+
+.swiper-slide {
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+.port_img {
+    width: 590px;
+    margin-right: 204px;
+}
+
+.port_img_bg {
+    width: 100%;
+    height: 401px;
     background-image: url(../images/port_bg.png);
-    text-align:center; 
+    text-align: center;
 }
-#desktop{
-    margin-top:55px;
+
+#desktop {
+    margin-top: 55px;
+}
+
+
+.port_text {
+    flex: 1;
+    padding-top: 20px;
+
+}
+
+.port_num {
+    border: solid 1px #3d6d93;
+    border-radius: 50%;
+    width: 80px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.port_title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.port_subTitle {
+    font-weight: bold;
+    margin-bottom: 53px;
+}
+
+#port_text {
+    margin-bottom: 70px;
+}
+
+.port_button {
+    display: flex;
+}
+
+.port_button li {
+    border: solid 1px #3d6d93;
+    border-radius: 50%;
+    font-weight: bold;
+    width: 126px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.port_button li:first-child {
+    margin-right: 20px;
 }
 
 
 
 
-.port_text{
-   flex:1; padding-top:20px;
-   
-}
-.port_num{
-    border:solid 1px #3d6d93; border-radius: 50%;
-    width:80px; line-height:30px; font-weight:bold;
-    text-align:center; margin-bottom:15px;
-}
-.port_title{
-    font-size:36px; font-weight:bold;
-    margin-bottom:18px;
-}
-.port_subTitle{
-    font-weight:bold; margin-bottom:53px;
-}
 
-#port_text{
-    margin-bottom:70px;
-}
-.port_button{
-    display:flex; 
-}
-.port_button li{
-    border:solid 1px #3d6d93; border-radius: 50%;
-    font-weight:bold;
-    width: 126px; line-height:40px; text-align:center;
-}
-.port_button li:first-child{
-   margin-right:20px;
-}
+
 
 /* section3 끝 */
