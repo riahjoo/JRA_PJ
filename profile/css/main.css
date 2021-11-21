@@ -64,7 +64,8 @@
 
 p.text_title {
     margin-bottom: 10px;
-    font-weight: bold;
+   color:#3d6d93; font-weight: bold;
+   
 }
 
 p.skill_t {
@@ -88,10 +89,6 @@ p.skill_t {
     margin-bottom: 78px;
 }
 
-.port_contents {
-    width: 100%;
-    display: flex;
-}
 
 
 .swiper {
@@ -116,6 +113,19 @@ p.skill_t {
     align-items: center;
 }
 
+:root {
+    --swiper-theme-color: #3d6d93!important;
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 75px !important;
+}
+
+.port_contents {
+    width: 100%;
+    display: flex;
+}
 
 .port_img {
     width: 590px;
@@ -182,10 +192,21 @@ p.skill_t {
     margin-right: 20px;
 }
 
-
-
-
-
-
-
 /* section3 끝 */
+
+
+/* section4 시작 */
+
+.con_title{
+
+    margin-top:150px;
+}
+
+
+
+
+
+
+
+
+/* section4 끝 */
