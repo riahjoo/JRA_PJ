@@ -62,11 +62,7 @@
     width: 90px;
 }
 
-p.text_title {
-    margin-bottom: 10px;
-   color:#3d6d93; font-weight: bold;
-   
-}
+
 
 p.skill_t {
     line-height: 21px;
@@ -129,7 +125,7 @@ p.skill_t {
 
 .port_img {
     width: 590px;
-    margin-right: 204px;
+    margin-right: 204px;position: relative; left:0; top:0;
 }
 
 .port_img_bg {
@@ -138,9 +134,14 @@ p.skill_t {
     background-image: url(../images/port_bg.png);
     text-align: center;
 }
+.port_img_bg video{
+    width:326px; margin-top:65px;
+}
 
 #desktop {
-    margin-top: 55px;
+    margin-top: 55px; display:block;
+    position:absolute; left:50%; transform:translateX(-50%);
+    top:50%; transform:translateY(-50%);
 }
 
 
@@ -198,15 +199,57 @@ p.skill_t {
 /* section4 시작 */
 
 .con_title{
-
     margin-top:150px;
 }
 
+.contact_box{
+    border: solid 1px #3d6d93; border-radius: 20px;
+    padding:40px; display:flex;
+}
 
+.contact_box li{
+    margin-bottom:39px;
+}
 
+.contact_box li:last-child{
+    margin-bottom:0;
+}
+.contact_contents{
+    margin-right:120px;
+}
+.contact_text{
+    font-size:36px; font-weight:bold; 
+}
 
-
-
-
+.contents_img{
+    text-align:center; flex:1; 
+}
+.contents_img img{
+    margin-top:36px;
+}
 
 /* section4 끝 */
+
+/* footer */
+
+footer{
+    position:absolute; bottom:0;
+    left:50%; transform:translateX(-50%);
+    width:100%; height:256px; background-color:#3d6d93;
+    text-align:center;
+}
+
+footer h2{
+    text-decoration: none;  text-decoration:none;
+    font-family: 'Anton', sans-serif; 
+    letter-spacing: 2px; font-size:72px;
+    margin-top:70px; font-weight:normal;
+}
+
+footer p,h2{
+    color:#fef9c2; 
+}
+
+footer p{
+    margin-top:30px;
+}

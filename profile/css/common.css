@@ -35,6 +35,10 @@ div,p,li,a{
     margin:150px auto 85px;
 }
 
+.text_title {
+   margin-bottom: 10px;
+   color:#3d6d93; font-weight: bold;
+}
 /* header */
 
 #header{
@@ -74,7 +78,7 @@ div,p,li,a{
     width:961px; height:398px; background-image: url(../images/sec1_bg.png);
 
 }
-p.greet{
+.greet{
     font-size:72px; text-decoration: underline;
     position:absolute;  font-family: 'Anton', sans-serif; 
     letter-spacing: 2px; 
@@ -97,3 +101,5 @@ p.greet{
 span#arrow{
     position:absolute; bottom:40px; left:50%; transform:translateX(-50%);
 }
+
+
