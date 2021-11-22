@@ -44,14 +44,16 @@ span#arrow{
 /* section1 시작 */
 
 .section1_cbx {
-    display: flex;
+    display: flex; 
     margin-top: 200px;
+    flex-wrap: nowrap; 
 }
 
 .me {
-    margin-right: 200px;
-    margin-top: 50px;
+    margin-right: 20%;
+    margin-top: 50px; 
 }
+
 
 .cv_btn {
     text-align: center;
