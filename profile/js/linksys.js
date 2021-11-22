@@ -42,6 +42,19 @@ $(function () {
 
         $("#mainmenu li").eq(pno).addClass("on").siblings().removeClass("on");
 
+    });
+
+
+    $("#logo").click(function () {
+
+        pno=0;
+        pos = $(window).height() * pno;
+
+        $("html,body").animate({
+            scrollTop: pos + "px"
+        }, 800, "easeInOutQuart");
+
+        $("#mainmenu li").eq(pno).addClass("on").siblings().removeClass("on");
 
     });
 

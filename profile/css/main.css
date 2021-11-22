@@ -6,6 +6,41 @@
 
 
 
+#sec0_contents{
+    margin:0 auto; position:relative; 
+    left:0; top:50%; transform:translateY(-50%);
+    width:961px;
+}
+
+#sec0_contents img{
+    display:block; width:100%;
+}
+
+.section0_text{
+    position:absolute; left:17%; top:8%;
+}
+
+.greet{
+    font-size:72px; text-decoration: underline;
+   font-family: 'Anton', sans-serif; 
+    letter-spacing: 2px; 
+}
+
+
+#character{
+    width:160px;
+    position:absolute; left:59%; top:33%;
+}
+
+#character img{
+    width:100%; display:block;
+}
+span#arrow{
+    position:absolute; bottom:40px; left:50%; transform:translateX(-50%);
+    display:block;
+}
+
+
 /* section1 시작 */
 
 .section1_cbx {
@@ -26,6 +61,11 @@
     border-radius: 50%;
     width: 138px;
     margin-top: 50px;
+}
+
+.cv_btn:hover {
+    border: solid 3px #3d6d93;
+    font-weight: bold;
 }
 
 /* section1 끝 */
@@ -71,6 +111,8 @@ p.skill_t {
 
 /* section2 끝 */
 
+
+
 /* section3 시작 */
 
 .sec3_contents {
@@ -84,8 +126,6 @@ p.skill_t {
     background-color: #3d6d93;
     margin-bottom: 78px;
 }
-
-
 
 .swiper {
     width: 100%;
@@ -110,11 +150,14 @@ p.skill_t {
 }
 
 :root {
-    --swiper-theme-color: #3d6d93!important;
+    --swiper-theme-color: #3d6d93 !important;
 }
 
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
     bottom: 75px !important;
 }
 
@@ -125,7 +168,10 @@ p.skill_t {
 
 .port_img {
     width: 590px;
-    margin-right: 204px;position: relative; left:0; top:0;
+    margin-right: 204px;
+    position: relative;
+    left: 0;
+    top: 0;
 }
 
 .port_img_bg {
@@ -134,21 +180,26 @@ p.skill_t {
     background-image: url(../images/port_bg.png);
     text-align: center;
 }
-.port_img_bg video{
-    width:326px; margin-top:65px;
+
+.port_img_bg video {
+    width: 326px;
+    margin-top: 65px;
 }
 
 #desktop {
-    margin-top: 55px; display:block;
-    position:absolute; left:50%; transform:translateX(-50%);
-    top:50%; transform:translateY(-50%);
+    margin-top: 55px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
 .port_text {
     flex: 1;
     padding-top: 20px;
-
 }
 
 .port_num {
@@ -189,6 +240,11 @@ p.skill_t {
     text-align: center;
 }
 
+.port_button li:hover{
+    border: solid 3px #3d6d93;
+    cursor: pointer;
+}
+
 .port_button li:first-child {
     margin-right: 20px;
 }
@@ -198,59 +254,74 @@ p.skill_t {
 
 /* section4 시작 */
 
-.con_title{
-    margin-top:150px;
+.con_title {
+    margin-top: 150px;
 }
 
-.contact_box{
-    border: solid 1px #3d6d93; border-radius: 20px;
-    padding:40px; display:flex;
+.contact_box {
+    border: solid 1px #3d6d93;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
 }
 
-.contact_box li{
-    margin-bottom:39px;
+.contact_box li {
+    margin-bottom: 39px;
 }
 
-.contact_box li:last-child{
-    margin-bottom:0;
-}
-.contact_contents{
-    margin-right:120px;
-}
-.contact_text{
-    font-size:36px; font-weight:bold; 
+.contact_box li:last-child {
+    margin-bottom: 0;
 }
 
-.contents_img{
-    text-align:center; flex:1; 
+.contact_contents {
+    margin-right: 120px;
 }
-.contents_img img{
-    margin-top:36px;
+
+.contact_text {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.contents_img {
+    text-align: center;
+    flex: 1;
+}
+
+.contents_img img {
+    margin-top: 36px;
 }
 
 /* section4 끝 */
 
 /* footer */
 
-footer{
-    position:absolute; bottom:0;
-    left:50%; transform:translateX(-50%);
-    width:100%; height:256px; background-color:#3d6d93;
-    text-align:center;
-    
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 256px;
+    background-color: #3d6d93;
+    text-align: center;
+
 }
 
-footer h2{
-    text-decoration: none;  text-decoration:none;
-    font-family: 'Anton', sans-serif; 
-    letter-spacing: 2px; font-size:72px;
-    margin-top:70px; font-weight:normal;
+footer h2 {
+    text-decoration: none;
+    text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    font-size: 72px;
+    margin-top: 70px;
+    font-weight: normal;
 }
 
-footer p,h2{
-    color:#fef9c2; 
+footer p,
+h2 {
+    color: #fef9c2;
 }
 
-footer p{
-    margin-top:30px;
+footer p {
+    margin-top: 30px;
 }
