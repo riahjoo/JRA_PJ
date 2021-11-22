@@ -15,9 +15,16 @@ const totnum = 5;
 // 광스크롤막기(0-허용,1-불허용)
 let psts = 0;
 
+
+
 $(function () {
 
+    $("#mainmenu li").eq(pno).addClass("on")
+    .siblings().removeClass("on");
+    
     $(document).on("mousewheel DOMMouseScroll",
+
+
         function (e) { //e-이벤트 전달변수
 
             // 모바일일때 기능막기
@@ -67,12 +74,17 @@ $(function () {
             }, 1200, "easeOutQuint");
 
 
-          
+
+            //  페이지번호(pno)에 맞는 GNB 메뉴 변경하기 //
+            // 변경대상: #mainmenu li
+            $("#mainmenu li").eq(pno).addClass("on")
+                .siblings().removeClass("on");
+
 
         });
 
 
 
-  
+
 
 });

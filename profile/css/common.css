@@ -67,7 +67,19 @@ div,p,li,a{
     margin-left:15px; width:138px;
     text-align:center;
     border:solid 1px #3d6d93; border-radius: 50%;
+    transition:all 0.4s ease-in;
 }
+
+
+#mainmenu li:hover,#mainmenu li.on{
+    
+    background:#3d6d93; 
+}
+#mainmenu li:hover>a,#mainmenu li.on>a{
+    
+    color:#fef9c2;
+}
+
 #mainmenu li a{
     font-weight:bold; line-height:40px; 
 }
@@ -100,6 +112,10 @@ div,p,li,a{
 }
 span#arrow{
     position:absolute; bottom:40px; left:50%; transform:translateX(-50%);
+    display:block;
 }
 
+#mainmenu li:hover,#arrow img:hover{
+    cursor: pointer;
+}
 
