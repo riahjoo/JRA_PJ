@@ -24,15 +24,12 @@
     }
 }
 
-@media only screen and (max-width:961px) {
+@media only screen and (max-width:962px) {
 
     #mainmenu{
         display:none;
     }
-    #logo{
-        padding-left:30px;
-        
-    }
+  
     #sec0_contents{
         width:100%;
     }
@@ -49,7 +46,7 @@
         justify-content: space-around;
     }
     .main_title {
-        margin:95px auto 43px;
+        margin:108px auto 43px;
     }
     .port_contents {
         flex-wrap: wrap; justify-content: space-around;
@@ -77,11 +74,20 @@
         font-size: 28px; margin-bottom:7px;
     }
     .border {
-        margin-bottom: 46px;
+        margin-bottom: 32px;
     }
     .port_img video {
         top: 15.5%;
         width: 55.3%;
+    }
+    .con_title {
+        margin: 82px 20px 20px;
+    }
+    .contact_box {
+        margin: 0 20px;
+    }
+    .contact_contents {
+        margin-right: 12%;
     }
     
 }
@@ -100,12 +106,12 @@
 
     @media screen and (orientation:portrait){
         #character{
-            left:30px; top:18%;
+            left:20px; top:18%;
             width:120px;
         } 
 
         .section0_text{
-            left:30px; 
+            left:20px; 
         }
         .greet{
             font-size:68px;
@@ -127,12 +133,23 @@
         }
             
         .me_text{
-            padding-left:30px; padding-top:30px;
+            padding-left:20px; padding-top:20px;
         }
         
         .me img{
             width:200px;
         }
+        .contents_img {
+            display:none;
+        }
+        
+        .contact_box {
+        display:block;
+        }
+        .contact_contents {
+            margin-right: 0px;
+        }
+       
     }
 
 }
@@ -180,7 +197,7 @@
             display:none;
         }
         .section1_cbx {
-           margin-top:60px;
+           margin-top:78px;
         }
 
         #skills_list li {
@@ -204,6 +221,28 @@
         .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
             bottom: 21px !important;
         }
+
+        .contact_box {
+            padding: 20px;
+        }
+
+        footer {
+            height: 153px;
+        }
+        footer h2 {
+            font-size: 48px;
+            margin-top: 27px;
+        }
+        footer p {
+            margin-top: 15px;
+        }
+        .contact_text {
+            font-size: 27px;
+        }
+        .sec3_contents .main_title {
+            margin: 85px auto 43px;
+        }
+
     }
 } 
 
