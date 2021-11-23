@@ -48,11 +48,14 @@
     .main_title {
         margin:108px auto 43px;
     }
+    
     .port_contents {
         flex-wrap: wrap; justify-content: space-around;
     }
-    .port_img {
-        margin: 0 auto;
+    @media screen and (orientation:portrait){
+        .port_img {
+            margin: 0 auto;
+        }
     }
     .port_text {
      flex: auto; width:100%; 
@@ -119,6 +122,7 @@
         .me img{
             width:300px;
         }
+        
     }   
 
 }
@@ -127,9 +131,9 @@
 
 @media only screen and (max-width:700px) {
 
-    @media screen and (orientation:portrait){
+    
         .section1_cbx {
-            flex-wrap: wrap;margin-top:40px;
+            margin-top:40px;
         }
             
         .me_text{
@@ -149,9 +153,8 @@
         .contact_contents {
             margin-right: 0px;
         }
-       
-    }
-
+      
+     
 }
 
 @media only screen and (max-width:668px) {
@@ -167,24 +170,70 @@
         .greet{
             font-size:48px;
         }
+        .me{
+            display:none;
+        }
+        .hidden{
+            height: 100px;
+            line-height: 20px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
+        
+        .main_title {
+            margin: 60px auto 35px;
+        }
 
+        #skills_list li {
+            padding: 0px;
+        }
+
+        #skills_list li img {
+            width: 59px; margin-bottom:17px;
+        }
+
+        p.skill_t {
+            display: none;
+        }   
+
+        #skills_list {
+            margin: 0 auto; width: 94%;
+        }
+        #skills_list li {
+            width: 16%;
+        }    
+        .port_img {
+            width: 33%;
+        }
+        .port_contents {
+            flex-wrap: nowrap;
+        }
+        #port_text {
+            display: none;
+        }
+        .port_text {
+            padding-top: 0px;
+        }
     }
 
 } 
 
 @media only screen and (max-width:540px) {
-    @media screen and (orientation:portrait){
+   
         .port_img {
             width: 100%;
         }
-
-    }
-
-
+       
 }
 
 
  @media only screen and (max-width:480px) {
+
+        #port_text {
+            display: none;
+        }
 
         @media screen and (orientation:portrait){
         #character{
@@ -215,9 +264,7 @@
         #skills_list {
             margin: 0 auto; width: 94%;
         }
-        #port_text {
-            display: none;
-        }
+       
         .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
             bottom: 21px !important;
         }
