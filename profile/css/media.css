@@ -33,6 +33,9 @@
 @media only screen and (max-width:1024px) {
 
     @media screen and (orientation:landscape) {
+        #character{
+            left:67%;
+        }
 
         #section2 .title {
             margin-top: 5vmin;
