@@ -16,6 +16,8 @@ div,p,li,a{
 /* 공통 class*/
 .cbx{
     width:961px; position:relative; margin:0 auto; 
+    top: 50%; 
+    transform: translateY(-50%);
 }
 
 .title{
@@ -29,12 +31,11 @@ div,p,li,a{
 
 .section{
     width:100%; height:100%;  position:relative; left:0; top:0;
-    background:#fef9c2;
+    background:#fef9c2; 
     overflow:hidden; 
 }
 .main_title{
     width:100%; text-align:center; 
-    margin: 130px auto 51px;
 }
 
 .text_title {

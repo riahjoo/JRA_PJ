@@ -45,8 +45,8 @@ span#arrow{
 
 .section1_cbx {
     display: flex; 
-    margin-top: 200px;
     flex-wrap: nowrap; 
+   
 }
 
 .me {
@@ -154,15 +154,9 @@ p.skill_t {
 :root {
     --swiper-theme-color: #3d6d93 !important;
 }
-
-
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-    bottom: 75px !important;
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -8vmax !important;
 }
-
 .port_contents {
     width: 100%;
     display: flex;
@@ -258,9 +252,11 @@ p.skill_t {
 
 
 /* section4 시작 */
-
-.con_title {
-    margin-top: 150px;
+.section4_contents{
+    width: 961px;
+    position: relative;
+    margin: 0 auto;
+    top: 15%;
 }
 
 .contact_box {
@@ -284,7 +280,7 @@ p.skill_t {
 
 .contact_text {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: bold;line-height: 24px;
 }
 
 .contents_img {
