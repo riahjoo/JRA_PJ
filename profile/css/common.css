@@ -34,14 +34,16 @@ div,p,li,a{
 }
 .main_title{
     width:100%; text-align:center; 
-    margin:150px auto 85px;
+    margin: 130px auto 51px;
 }
 
 .text_title {
-   margin-bottom: 10px;
+    margin-bottom: 10px; 
    color:#3d6d93; font-weight: bold;
 }
-
+.skills_title{
+    text-align:center;
+}
 
 /* header */
 

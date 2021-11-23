@@ -13,9 +13,18 @@
     #mainmenu{
         right:20px;
     }
+    .sec3_contents{
+        width:100%;
+    }
+    .port_img {
+        margin-right: 8%;
+    }
+    .port_contents {
+        padding: 0 20px;
+    }
 }
 
-@media only screen and (max-width:960px) {
+@media only screen and (max-width:961px) {
 
     #mainmenu{
         display:none;
@@ -36,10 +45,57 @@
     .me_text{
         padding-right:30px;
     }
-  
+    #skills_list {
+        justify-content: space-around;
+    }
+    .main_title {
+        margin:95px auto 43px;
+    }
+    .port_contents {
+        flex-wrap: wrap; justify-content: space-around;
+    }
+    .port_img {
+        margin: 0 auto;
+    }
+    .port_text {
+     flex: auto; width:100%; 
+    }
+    .port_img {
+        width: 500px;
+    }
+    .port_num {
+        font-size:11px; margin-bottom:8px;
+        width: 56px; line-height: 21px;
+    }
+    .port_subTitle {
+        margin-bottom: 20px;
+    }
+    .port_button {
+        display:none;
+    }
+    .port_title {
+        font-size: 28px; margin-bottom:7px;
+    }
+    .border {
+        margin-bottom: 46px;
+    }
+    .port_img video {
+        top: 15.5%;
+        width: 55.3%;
+    }
+    
 }
 
+@media only screen and (max-width:833px) {
 
+    #skills_list li.brk {
+        display:none;
+    }
+    #skills_list li {
+        width: 30%; height:auto;
+    }
+  
+}
 @media only screen and (max-width:800px) {
 
     @media screen and (orientation:portrait){
@@ -81,27 +137,6 @@
 
 }
 
-
-
- @media only screen and (max-width:480px) {
-
-        @media screen and (orientation:portrait){
-        #character{
-            width:90px;
-        } 
-        .greet{
-            font-size:48px;
-        }
-        .me {
-            display:none;
-        }
-        .section1_cbx {
-           margin-top:60px;
-        }
-    }
-} 
-
-
 @media only screen and (max-width:668px) {
 
     @media screen and (orientation:landscape){
@@ -119,5 +154,60 @@
     }
 
 } 
+
+@media only screen and (max-width:540px) {
+    @media screen and (orientation:portrait){
+        .port_img {
+            width: 100%;
+        }
+
+    }
+
+
+}
+
+
+ @media only screen and (max-width:480px) {
+
+        @media screen and (orientation:portrait){
+        #character{
+            width:90px;
+        } 
+        .greet{
+            font-size:48px;
+        }
+        .me {
+            display:none;
+        }
+        .section1_cbx {
+           margin-top:60px;
+        }
+
+        #skills_list li {
+            padding: 0px;
+        }
+
+        #skills_list li img {
+            width: 68px; margin-bottom:17px;
+        }
+
+        p.skill_t {
+            display: none;
+        }   
+
+        #skills_list {
+            margin: 0 auto; width: 94%;
+        }
+        #port_text {
+            display: none;
+        }
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+            bottom: 21px !important;
+        }
+    }
+} 
+
+
+
 
 
