@@ -48,12 +48,145 @@ div,p,li,a{
 
 /* header */
 
-#header{
-    width:1200px;height:80px;
-    position:fixed; top:0; 
-    left:50%; transform:translateX(-50%);
-    z-index:999; 
+div#header_wrap {
+    width: 100%;
+    height:80px;
+    float: left;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    box-sizing: border-box;
+    z-index: 10;
 }
+
+#header{
+    width:1200px; height:100%;;
+    margin: 0px auto;
+    left: 0px;
+    top: 0px;
+    position: relative;
+    z-index:1; 
+}
+
+/* mobile */
+
+#mobilemenu{
+    width: 375px;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background: #3d6d93;
+}
+
+
+nav#mobilemenu img {
+    position: relative;
+    top: 0px;
+}
+
+h2.mobilemenu_icon {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    right: 31px;
+    top: 28px;
+    overflow: hidden;
+    display:none;
+}
+h2.mobilemenu_icon:hover{
+    cursor: pointer;    
+}
+
+h2.mobilemenu_icon img {
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    top: 28px; 
+}
+
+div#mobilemenu_wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+div#m_header{
+    width: 100%;
+    height: 80px; left:0; top:0;
+     position:relative;
+    box-sizing: border-box;
+}
+
+#m_logo {
+    font-size:18px;
+    line-height:80px;
+    color:#fef9c2; padding-left:30px;
+    font-weight:bold;
+}
+
+#mobileclose_btn{
+    width: 20px;
+    height: 20px; position:absolute; right:30px;
+    display: inline-block; top:50%; transform: translateY(-50%);
+}
+#m_header>span:hover{
+    cursor:pointer;
+}
+#mobileclose_btn img{
+    width:100%; display:block;
+}
+
+ul#mobilemenu_list {
+    width: 100%; 
+    height: 354px; display:flex;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top:44px;
+}
+
+ul#mobilemenu_list>li {
+    width: 137px;
+    height: 50px;
+    line-height:50px;
+    
+    border: solid 1px #fef9c2; border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    left: 0px; top: 0px; margin:0 auto;
+    text-align:center;
+}
+
+ul#mobilemenu_list a {
+    color: #fef9c2; display:block;
+}
+
+p#m_phone{
+    width:100%; text-align:center; 
+    color: #fef9c2;  margin-top:70px; letter-spacing:1px;
+}
+
+#etc{
+    width:100%; 
+    margin-top:25px;text-align:center;
+}
+
+#etc a{
+    padding:0 11px;
+}
+
+div#mobile_graylayer {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.8;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
 
 #logo{
     font-weight:bold; line-height:80px; 
@@ -88,7 +221,8 @@ div,p,li,a{
 
 
 
-#logo,#mainmenu li:hover,#arrow img:hover{
+#mainmenu li:hover,#arrow img:hover{
     cursor: pointer;
 }
+
 

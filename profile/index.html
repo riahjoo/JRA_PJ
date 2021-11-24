@@ -16,289 +16,324 @@
     <script src="js/autoScroll.js"></script>
     <script src="js/linksys.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/mobileMenu.js"></script>
 
 </head>
 
 <body>
-<!-- header 시작 -->
-    <header id="header">
-        <p id="logo">
-            RIAH's Portfolio page
-        </p>
-        <ul id="mainmenu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">SKILLS</a>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-    </header>
-
-<!-- header 끝 -->
-
-<!-- section0 시작 -->
-    <section class="section" id="section0">
-
-        <div id="sec0_contents">
-            <img src="./images/sec1_bg.png" alt="background">
-            <div class="section0_text">
-                <p class="greet">Hello!</p>
-                <p class="greet">I'm RIAH.</p>
-                <p class="greet">WEB PUBLISHER.</p>
-            </div>
-
-        </div>
-        <div id="character">
-            <img src="./images/char.png" alt="character">
-        </div>
-
-        <span id="arrow">
-            <img src="./images/arrow.png" alt="아래로 이동버튼">
-        </span>
-    </section>
-
-<!-- section0 끝 -->
-
-<!-- section1(about me) 시작 -->
-    <section class="section" id="section1">
-        <div class="cbx section1_cbx">
-            <div class="me">
-                <img src="./images/me.png" alt="프로필사진">
-            </div>
-            <div class="me_text">
-                <p class="title">ABOUT ME</p>
-                <p class="text hidden">
-                    안녕하세요. 제 이름은 주리아 라고 합니다.<br>
-                    1992년 3월 8일생으로 현재 김포에 거주중 입니다.<br>
-                    <br>
-                    덕성여자대학교 패션디자인과를 졸업하였습니다.<br>
-                    신촌 그린컴퓨터학원에서 UI/UX 스마트 기기 및 퍼블리셔 과정을 수료하였으며
-                    강남 IT학원에서 프론트엔드 과정을 수료하였습니다.<br>
-                    <br>
-                    좋아하는 것은 목공, 쇼핑, 여행 입니다.
-                    다양한 것을 배우는 것을 좋아하며 즐겁게 세상을 살아가려 노력합니다.<br>
-                    긍정적인 편이며 책임감 있고 행동파이며 MBTI는 INFJ인 여성입니다 :)
-                </p>
-                <a class="cv_btn" href="./file/이력서_주리아.hwp" download>
-                    이력서 다운
-                </a>
-            </div>
-        </div>
-    </section>
-<!-- section1(about me) 끝 -->
-
-<!-- section2(SKILLS) 시작 -->
-    <section class="section" id="section2">
-        <div class="cbx">
-            <p class="title main_title">SKILLS</p>
-            <ul id="skills_list">
-                <li>
-                    <img src="./images/html.gif" alt="html">
-                    <p class="text_title skills_title">HTML</p>
-                    <p class="text skill_t">
-                        사이트 코딩 및 슬라이드 다양한 배너작업
-                        가능하고, 레이아웃 구조 설계 가능합니다.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/css.gif" alt="css">
-                    <p class="text_title skills_title">CSS</p>
-                    <p class="text skill_t">
-                        마크업 언어를 통해 원하는 화면구현이 가능
-                        하고 미디어쿼리로 반응형 제작 가능합니다.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/javascript.gif" alt="javascript">
-                    <p class="text_title skills_title">JavaScript</p>
-                    <p class="text skill_t">
-                        script를 이용하여 이미지 슬라이드 배너 제작
-                        가능하고 for문, if문 등 함수 사용 가능합니다.
-                    </p>
-                </li>
-                <li class="brk"></li>
-                <li>
-                    <img src="./images/jquery.gif" alt="jquery">
-                    <p class="text_title skills_title">Jquery</p>
-                    <p class="text skill_t">
-                        라이브러리를 수정하여 동적인 웹 구현, jQuery식 선택자, 메서드로 코딩 가능합니다.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/illu.gif" alt="illu">
-                    <p class="text_title skills_title">Illustrator</p>
-                    <p class="text skill_t">
-                        타이포그라피, 그래픽 및 로고, 심볼, 캐릭터
-                        디자인 가능합니다.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/photoshop.gif" alt="photoshop">
-                    <p class="text_title skills_title">Photoshop</p>
-                    <p class="text skill_t">
-                        기본적인 툴 사용과 합성기술 및 사진 편집
-                        가능하고 간단한 배너 제작 가능합니다.
-                    </p>
-                </li>
+    <!-- header 시작 -->
+    <div id="header_wrap">
+        <header id="header">
+            <p id="logo">
+                <a href="https://riahjoo.github.io/JRA_PJ/profile/">RIAH's Portfolio page</a>
+            </p>
+            <ul id="mainmenu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">SKILLS</a>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
-
-        </div>
-    </section>
-<!-- section2(SKILLS) 끝 -->
-
-<!-- section3(PORTFOLIO) 시작 -->
-    <section class="section" id="section3">
-
-        <div class="cbx sec3_contents">
-            <p class="title main_title">PORTFOLIO</p>
-            <p class="border"></p>
-
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="port_contents">
-                            <div class="port_img">
-                                <img id="port_img"src="./images/port_bg.png" alt="background">
-                                <video src="./video/gongcha.mp4" autoplay muted loop playsinline></video>
-                            </div>
-                            <div class="port_text">
-                                <p class="port_num">
-                                    #1
-                                </p>
-                                <p class="port_title">
-                                    공차 / 반응형
-                                </p>
-                                <p class="port_subTitle">2021 / Website renewal / Main page</p>
-                                <p class="text" id="port_text">
-                                    &nbsp;&nbsp;평소 좋아하던 공차를 소재로 사이트를 리뉴얼 해보았습니다.&nbsp; 기존 사이트의 컨텐츠들이 구분없이 나열되어 있는
-                                    레이아웃이였기
-                                    때문에 좀더 큰 레이아웃에 컨텐츠들을 배치하여 리뉴얼해보았습니다.
-                                </p>
-                                <ul class="port_button">
-                                    <li>
-                                        <a href="https://riahjoo.github.io/JRA_PJ/gongcha/" target="_blank">GO TO
-                                            SITE</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">VIEW DETAIL</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+            <nav id="mobilemenu">
+                <h2 class="mobilemenu_icon">
+                    <img src="images/mbtn.png" alt="모바일메뉴">
+                </h2>
+                <div id="mobilemenu_wrap">
+                    <div id="m_header">
+                        <span id="m_logo">RIAH</span>
+                        <span id="mobileclose_btn">
+                            <img src="images/closebtn.png" alt="닫기">
+                        </span>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="port_contents">
-                            <div class="port_img">
-                                <img id="port_img"src="./images/port_bg.png" alt="background">
-                                <video src="./video/toy.mp4" autoplay muted loop playsinline></video>
-                            </div>
-                            <div class="port_text">
-                                <p class="port_num">
-                                    #2
-                                </p>
-                                <p class="port_title">
-                                    토이스토리
-                                </p>
-                                <p class="port_subTitle">2021 / Intro page making / 1page</p>
-                                <p class="text" id="port_text">
-                                    &nbsp;&nbsp;토이스토리 캐릭터 소개 페이지를 간단히 만들어 보았습니다. html과 css만을 사용하여 마우스 hover시 효과를
-                                    주었습니다.
-                                </p>
-                                <ul class="port_button">
-                                    <li>
-                                        <a href="https://riahjoo.github.io/JRA_PJ/PJ_01/" target="_blank">GO TO SITE</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">VIEW DETAIL</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <ul id="mobilemenu_list">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT ME</a></li>
+                        <li><a href="#">SKILLS</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                    <p id="m_phone">010-3648-2948</p>
+                    <div id="etc">
+                        <a href="#">
+                            <img src="./images/git.png" alt="github바로가기">
+                        </a>
+                        <a href="#">
+                            <img src="./images/mail.png" alt="메일보내기">
+                        </a>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="port_contents">
-                            <div class="port_img">
-                                <img id="port_img"src="./images/port_bg.png" alt="background">
-                                <video src="./video/street.mp4" autoplay muted loop playsinline></video>
-                            </div>
-                            <div class="port_text">
-                                <p class="port_num">
-                                    #3
-                                </p>
-                                <p class="port_title">
-                                    스트리트 푸드파이터
-                                </p>
-                                <p class="port_subTitle">2021 / Website making / 2page</p>
-                                <p class="text" id="port_text">
-                                    &nbsp;&nbsp;스트리트 푸드파이터의 intro페이지와 main페이지를 만들어 보았습니다. 메인페이지에서 영상 리스트를 클릭시 해당 영상이
-                                    재생되도록 구현하였습니다.
+                </div>
+            </nav>
+        </header>
+    </div>
+        <!-- header 끝 -->
 
-                                </p>
-                                <ul class="port_button">
-                                    <li>
-                                        <a href="https://riahjoo.github.io/JRA_PJ/PJ_02/intro.html" target="_blank">GO
-                                            TO SITE</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">VIEW DETAIL</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        <!-- section0 시작 -->
+        <section class="section" id="section0">
+
+            <div id="sec0_contents">
+                <img src="./images/sec1_bg.png" alt="background">
+                <div class="section0_text">
+                    <p class="greet">Hello!</p>
+                    <p class="greet">I'm RIAH.</p>
+                    <p class="greet">WEB PUBLISHER.</p>
                 </div>
 
             </div>
+            <div id="character">
+                <img src="./images/char.png" alt="character">
+            </div>
 
-            <div class="swiper-pagination"></div>
+            <span id="arrow">
+                <img src="./images/arrow.png" alt="아래로 이동버튼">
+            </span>
+        </section>
 
-        </div>
+        <!-- section0 끝 -->
 
-    </section>
+        <!-- section1(about me) 시작 -->
+        <section class="section" id="section1">
+            <div class="cbx section1_cbx">
+                <div class="me">
+                    <img src="./images/me.png" alt="프로필사진">
+                </div>
+                <div class="me_text">
+                    <p class="title">ABOUT ME</p>
+                    <p class="text hidden">
+                        안녕하세요. 제 이름은 주리아 라고 합니다.<br>
+                        1992년 3월 8일생으로 현재 김포에 거주중 입니다.<br>
+                        <br>
+                        덕성여자대학교 패션디자인과를 졸업하였습니다.<br>
+                        신촌 그린컴퓨터학원에서 UI/UX 스마트 기기 및 퍼블리셔 과정을 수료하였으며
+                        강남 IT학원에서 프론트엔드 과정을 수료하였습니다.<br>
+                        <br>
+                        좋아하는 것은 목공, 쇼핑, 여행 입니다.
+                        다양한 것을 배우는 것을 좋아하며 즐겁게 세상을 살아가려 노력합니다.<br>
+                        긍정적인 편이며 책임감 있고 행동파이며 MBTI는 INFJ인 여성입니다 :)
+                    </p>
+                    <a class="cv_btn" href="./file/이력서_주리아.hwp" download>
+                        이력서 다운
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- section1(about me) 끝 -->
 
-<!-- section3(PORTFOLIO) 끝 -->
-
-<!-- section4(CONTACT) 시작 -->
-    <section class="section" id="section4">
-
-        <div class="section4_contents">
-
-            <p class="title con_title">CONTACT</p>
-
-            <div class="contact_box">
-                <ul class="contact_contents">
+        <!-- section2(SKILLS) 시작 -->
+        <section class="section" id="section2">
+            <div class="cbx">
+                <p class="title main_title">SKILLS</p>
+                <ul id="skills_list">
                     <li>
-                        <p class="text_title">Tell</p>
-                        <p class="text">010-3648-2948</p>
+                        <img src="./images/html.gif" alt="html">
+                        <p class="text_title skills_title">HTML</p>
+                        <p class="text skill_t">
+                            사이트 코딩 및 슬라이드 다양한 배너작업
+                            가능하고, 레이아웃 구조 설계 가능합니다.
+                        </p>
                     </li>
                     <li>
-                        <p class="text_title">E-mail</p>
-                        <a href="mailto:jrjuria92@naver.com" class="contact_text" title="메일 보내기">jrjuria92@naver.com</a>
+                        <img src="./images/css.gif" alt="css">
+                        <p class="text_title skills_title">CSS</p>
+                        <p class="text skill_t">
+                            마크업 언어를 통해 원하는 화면구현이 가능
+                            하고 미디어쿼리로 반응형 제작 가능합니다.
+                        </p>
                     </li>
                     <li>
-                        <p class="text_title">Git-hub</p>
-                        <a href="https://github.com/riahjoo" class="text"
-                            title="깃허브 바로가기">https://github.com/riahjoo</a>
+                        <img src="./images/javascript.gif" alt="javascript">
+                        <p class="text_title skills_title">JavaScript</p>
+                        <p class="text skill_t">
+                            script를 이용하여 이미지 슬라이드 배너 제작
+                            가능하고 for문, if문 등 함수 사용 가능합니다.
+                        </p>
+                    </li>
+                    <li class="brk"></li>
+                    <li>
+                        <img src="./images/jquery.gif" alt="jquery">
+                        <p class="text_title skills_title">Jquery</p>
+                        <p class="text skill_t">
+                            라이브러리를 수정하여 동적인 웹 구현, jQuery식 선택자, 메서드로 코딩 가능합니다.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/illu.gif" alt="illu">
+                        <p class="text_title skills_title">Illustrator</p>
+                        <p class="text skill_t">
+                            타이포그라피, 그래픽 및 로고, 심볼, 캐릭터
+                            디자인 가능합니다.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/photoshop.gif" alt="photoshop">
+                        <p class="text_title skills_title">Photoshop</p>
+                        <p class="text skill_t">
+                            기본적인 툴 사용과 합성기술 및 사진 편집
+                            가능하고 간단한 배너 제작 가능합니다.
+                        </p>
                     </li>
                 </ul>
 
-                <div class="contents_img">
-                    <img src="./images/char2.png" alt="이모티콘">
+            </div>
+        </section>
+        <!-- section2(SKILLS) 끝 -->
+
+        <!-- section3(PORTFOLIO) 시작 -->
+        <section class="section" id="section3">
+
+            <div class="cbx sec3_contents">
+                <p class="title main_title">PORTFOLIO</p>
+                <p class="border"></p>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="port_contents">
+                                <div class="port_img">
+                                    <img id="port_img" src="./images/port_bg.png" alt="background">
+                                    <video src="./video/gongcha.mp4" autoplay muted loop playsinline></video>
+                                </div>
+                                <div class="port_text">
+                                    <p class="port_num">
+                                        #1
+                                    </p>
+                                    <p class="port_title">
+                                        공차 / 반응형
+                                    </p>
+                                    <p class="port_subTitle">2021 / Website renewal / Main page</p>
+                                    <p class="text" id="port_text">
+                                        &nbsp;&nbsp;평소 좋아하던 공차를 소재로 사이트를 리뉴얼 해보았습니다.&nbsp; 기존 사이트의 컨텐츠들이 구분없이 나열되어 있는
+                                        레이아웃이였기
+                                        때문에 좀더 큰 레이아웃에 컨텐츠들을 배치하여 리뉴얼해보았습니다.
+                                    </p>
+                                    <ul class="port_button">
+                                        <li>
+                                            <a href="https://riahjoo.github.io/JRA_PJ/gongcha/" target="_blank">GO TO
+                                                SITE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">VIEW DETAIL</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="port_contents">
+                                <div class="port_img">
+                                    <img id="port_img" src="./images/port_bg.png" alt="background">
+                                    <video src="./video/toy.mp4" autoplay muted loop playsinline></video>
+                                </div>
+                                <div class="port_text">
+                                    <p class="port_num">
+                                        #2
+                                    </p>
+                                    <p class="port_title">
+                                        토이스토리
+                                    </p>
+                                    <p class="port_subTitle">2021 / Intro page making / 1page</p>
+                                    <p class="text" id="port_text">
+                                        &nbsp;&nbsp;토이스토리 캐릭터 소개 페이지를 간단히 만들어 보았습니다. html과 css만을 사용하여 마우스 hover시 효과를
+                                        주었습니다.
+                                    </p>
+                                    <ul class="port_button">
+                                        <li>
+                                            <a href="https://riahjoo.github.io/JRA_PJ/PJ_01/" target="_blank">GO TO
+                                                SITE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">VIEW DETAIL</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="port_contents">
+                                <div class="port_img">
+                                    <img id="port_img" src="./images/port_bg.png" alt="background">
+                                    <video src="./video/street.mp4" autoplay muted loop playsinline></video>
+                                </div>
+                                <div class="port_text">
+                                    <p class="port_num">
+                                        #3
+                                    </p>
+                                    <p class="port_title">
+                                        스트리트 푸드파이터
+                                    </p>
+                                    <p class="port_subTitle">2021 / Website making / 2page</p>
+                                    <p class="text" id="port_text">
+                                        &nbsp;&nbsp;스트리트 푸드파이터의 intro페이지와 main페이지를 만들어 보았습니다. 메인페이지에서 영상 리스트를 클릭시 해당 영상이
+                                        재생되도록 구현하였습니다.
+
+                                    </p>
+                                    <ul class="port_button">
+                                        <li>
+                                            <a href="https://riahjoo.github.io/JRA_PJ/PJ_02/intro.html"
+                                                target="_blank">GO
+                                                TO SITE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">VIEW DETAIL</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </section>
+
+        <!-- section3(PORTFOLIO) 끝 -->
+
+        <!-- section4(CONTACT) 시작 -->
+        <section class="section" id="section4">
+
+            <div class="section4_contents">
+
+                <p class="title con_title">CONTACT</p>
+
+                <div class="contact_box">
+                    <ul class="contact_contents">
+                        <li>
+                            <p class="text_title">Tell</p>
+                            <p class="text">010-3648-2948</p>
+                        </li>
+                        <li>
+                            <p class="text_title">E-mail</p>
+                            <a href="mailto:jrjuria92@naver.com" class="contact_text"
+                                title="메일 보내기">jrjuria92@naver.com</a>
+                        </li>
+                        <li>
+                            <p class="text_title">Git-hub</p>
+                            <a href="https://github.com/riahjoo" class="text"
+                                title="깃허브 바로가기">https://github.com/riahjoo</a>
+                        </li>
+                    </ul>
+
+                    <div class="contents_img">
+                        <img src="./images/char2.png" alt="이모티콘">
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+            <!-- footer -->
+            <footer>
+                <h2>THANK YOU :)</h2>
+                <p>© 2021. RIAH JOO all rights reserved.</p>
+            </footer>
 
-        <!-- footer -->
-        <footer>
-            <h2>THANK YOU :)</h2>
-            <p>© 2021. RIAH JOO all rights reserved.</p>
-        </footer>
+        </section>
 
-    </section>
-
-<!-- section4(CONTACT)끝  -->
+        <!-- section4(CONTACT)끝  -->
+   
 
 </body>
 

@@ -77,6 +77,10 @@
         display: none;
     }
 
+    h2.mobilemenu_icon{
+        display:block;
+    }
+
     #sec0_contents {
         width: 100%;
     }
