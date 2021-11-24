@@ -82,7 +82,7 @@
         display: none;
     }
 
-    h2.mobilemenu_icon{
+    h2.mobilemenu_icon,#mobilemenu{
         display:block;
     }
 

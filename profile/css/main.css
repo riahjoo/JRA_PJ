@@ -155,7 +155,7 @@ p.skill_t {
     --swiper-theme-color: #3d6d93 !important;
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: -8vmax !important;
+    bottom: -10% !important; 
 }
 .port_contents {
     width: 100%;
