@@ -22,7 +22,6 @@ $(function () {
 
         function (e) { //e-이벤트 전달변수
 
-        
             ////// 광스크롤막기 /////////////
             if (psts) return; //돌아가!
             psts = 1; //불허용상태변경!
@@ -30,7 +29,9 @@ $(function () {
                 psts = 0;
             }, 1200);
 
-            
+
+
+
             // 마우스휠 방향 알아내기!///
             e = window.event || e;
 
