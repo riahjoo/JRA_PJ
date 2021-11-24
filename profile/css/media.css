@@ -406,23 +406,27 @@
             margin: 0 auto;
             width: 94%;
         }
-
+     
+        .title {
+            font-size: 36px;
+        }
 
         footer {
-            height: 153px;
+            height: 100px;
         }
 
         footer h2 {
             font-size: 48px;
-            margin-top: 27px;
+            margin-top: 6px;
         }
 
         footer p {
-            margin-top: 15px;
+            margin-top: -1px;
         }
 
         .contact_text {
-            font-size: 27px;
+            font-size: 14px; 
+            font-weight: normal;
         }
 
 
