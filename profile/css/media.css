@@ -73,9 +73,6 @@
         }
     }
 
-    html,body{
-        overflow:scroll;
-    }
 
     #mainmenu {
         display: none;
