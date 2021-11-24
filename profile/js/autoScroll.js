@@ -4,7 +4,7 @@
 /// 모바일 여부 코드 //
 let mob = 0;//0-모바일 아님, 1-모바일
 if($(window).width() < 963) mob = 1;
-console.log("모바일여부:"+mob);
+
 
 // 현재 페이지 번호
 let pno = 0;
