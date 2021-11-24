@@ -1,6 +1,11 @@
 // 자동 스크롤 기능
 
 
+/// 모바일 여부 코드 //
+let mob = 0;//0-모바일 아님, 1-모바일
+if($(window).width() < 963) mob = 1;
+console.log("모바일여부:"+mob);
+
 // 현재 페이지 번호
 let pno = 0;
 
@@ -22,14 +27,15 @@ $(function () {
 
         function (e) { //e-이벤트 전달변수
 
+            // 모바일일때 기능막기
+            if(mob) return;
+
             ////// 광스크롤막기 /////////////
             if (psts) return; //돌아가!
             psts = 1; //불허용상태변경!
             setTimeout(() => {
                 psts = 0;
             }, 1200);
-
-
 
 
             // 마우스휠 방향 알아내기!///
