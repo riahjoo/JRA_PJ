@@ -73,6 +73,10 @@
         }
     }
 
+    html,
+    body {
+        overflow: visible;
+    }
 
     #mainmenu {
         display: none;
