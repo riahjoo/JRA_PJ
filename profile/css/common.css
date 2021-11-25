@@ -46,6 +46,7 @@ div,p,li,a{
     text-align:center;
 }
 
+
 /* header */
 
 div#header_wrap {
@@ -96,6 +97,7 @@ div#header_wrap {
     background: #3d6d93;
     display:none;
 }
+
 
 
 nav#mobilemenu img {
