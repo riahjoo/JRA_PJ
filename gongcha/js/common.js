@@ -14,6 +14,7 @@ let reFn = () => {
     }
 
 };
+
 reFn();
 $(window).resize(reFn);
 
@@ -64,6 +65,8 @@ $(function () {
 
 
 $(window).on('load', function () {
+
+
 
 
     // event 영역
@@ -128,14 +131,25 @@ $(window).on('load', function () {
     let mobileMenu = $(".mobile_mainmenu>li");
     let mobileIcon = $(".mobile_icon");
 
+    contentsReset()
 
+    $(window).resize(function () {
+
+         contentsReset()
+
+    })
     
-    mobileMenuWrap.css({
-        "width": mobileMenuWidth,
-        "height": $(window).innerHeight(),
-        "right": -mobileMenuWidth
-    });
+    
+    function contentsReset(){
 
+        mobileMenuWidth=$(window).innerWidth()
+        mobileMenuWrap.css({
+            "height":$(window).innerHeight(),
+            "width":mobileMenuWidth,
+            "right":-mobileMenuWidth
+        
+        })
+    }
 
     // 모바일 메뉴 열리고 닫히는 작업 
     mobileBtn.on("click", mobileMenuOpen)
