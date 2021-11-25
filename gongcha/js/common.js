@@ -40,19 +40,19 @@ $(function () {
 
 
         scTop = $(this).scrollTop();
-       
+
 
         if (mob) return;
 
         if (scTop >= 100 && scSts === 1) {
 
             scSts = 0;
-          
+
             tm.addClass("on");
 
         } else if (scTop < 100 && scSts === 0) {
             scSts = 1;
-            
+
             tm.removeClass("on");
 
         }
@@ -135,19 +135,19 @@ $(window).on('load', function () {
 
     $(window).resize(function () {
 
-         contentsReset()
+        contentsReset()
 
     })
-    
-    
-    function contentsReset(){
 
-        mobileMenuWidth=$(window).innerWidth()
+
+    function contentsReset() {
+
+        mobileMenuWidth = $(window).innerWidth()
         mobileMenuWrap.css({
-            "height":$(window).innerHeight(),
-            "width":mobileMenuWidth,
-            "right":-mobileMenuWidth
-        
+            "height": $(window).innerHeight(),
+            "width": mobileMenuWidth,
+            "right": -mobileMenuWidth
+
         })
     }
 
@@ -168,7 +168,7 @@ $(window).on('load', function () {
 
 
     function mobileMenuClose() {
-       
+
         mobileGrayLayer.hide()
         mobileMenuWrap.animate({
             "right": -mobileMenuWidth
@@ -186,14 +186,14 @@ $(window).on('load', function () {
 
     function onMobileMenuClick() {
 
-        
+
         if ($(this).data("isOpen") == false) {
 
             onMobileMenuClose()
 
             openHeight = closeHeight + $(".mobilesubmenu_list").children().outerHeight() * $(this).children(".mobilesubmenu_list").children().length
 
-           
+
 
             $(this).stop()
             $(this).animate({
@@ -216,37 +216,39 @@ $(window).on('load', function () {
         }
     }
 
-    function onMobileMenuClose(){ // 모든 모바일 메뉴를 닫히게 하는 명령 
-               
+    function onMobileMenuClose() { // 모든 모바일 메뉴를 닫히게 하는 명령 
+
         mobileMenu.stop()
-        mobileMenu.animate({"height":closeHeight})
-        mobileIcon.removeClass("mobile_selected"); 
+        mobileMenu.animate({
+            "height": closeHeight
+        })
+        mobileIcon.removeClass("mobile_selected");
 
-        mobileMenu.each(function(isOpen,data){ 
+        mobileMenu.each(function (isOpen, data) {
 
-            $(this).data("isOpen",false)
+            $(this).data("isOpen", false)
         })
     }
 
     // 토핑영역
     onTopping()
-   
-    function onTopping(){ //
+
+    function onTopping() { //
 
 
 
         if ($(window).width() >= 900) {
 
-        
-            $(".topp_list li").hover(function(){
+
+            $(".topp_list li").hover(function () {
 
                 $(this).toggleClass("toppOn");
 
             })
-    
+
         }
 
-    
+
     }
 
 
