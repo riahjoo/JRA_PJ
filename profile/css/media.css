@@ -32,6 +32,8 @@
 
 @media only screen and (max-width:1024px) {
 
+ 
+
     @media screen and (orientation:landscape) {
         #character{
             left:67%;
@@ -53,12 +55,8 @@
             margin-top: -6px;
         }
 
-        .swiper-horizontal>.swiper-pagination-bullets,
-        .swiper-pagination-bullets.swiper-pagination-horizontal,
-        .swiper-pagination-custom,
-        .swiper-pagination-fraction {
-            bottom: -8% !important;
-        }
+       
+      
     }
 
 
@@ -316,7 +314,9 @@
 
 
 @media only screen and (max-width:668px) {
-   
+    .title {
+        font-size: 36px; 
+    }
     @media screen and (orientation:landscape) {
 
        
@@ -372,7 +372,7 @@
         display: none;
     }
 
-
+    
     @media screen and (orientation:portrait) {
         #character {
             width: 90px;
@@ -405,9 +405,7 @@
             width: 94%;
         }
      
-        .title {
-            font-size: 36px; 
-        }
+       
 
         footer {
             height: 100px;
