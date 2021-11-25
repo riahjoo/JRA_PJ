@@ -3,8 +3,20 @@
 
 /// 모바일 여부 코드 //
 let mob = 0;//0-모바일 아님, 1-모바일
-if($(window).width() < 963) mob = 1;
 
+
+let reFn = () => {
+
+    if($(window).width() < 963) {
+        mob = 1;
+    } else {
+        mob = 0;
+    }
+
+};
+
+reFn();
+$(window).resize(reFn);
 
 // 현재 페이지 번호
 let pno = 0;
@@ -15,6 +27,47 @@ const totnum = 5;
 // 광스크롤막기(0-허용,1-불허용)
 let psts = 0;
 
+
+
+
+$(function () {
+
+    $("html,body").animate({
+
+        scrollTop: "0px"
+
+    }, 100)
+
+    // 스크롤 위치변수
+    let scTop;
+
+    let scSts = 1; // 실행 전 1, 실행 후 0
+
+    // 상단영역 요소
+    let hw = $("#header_wrap");
+
+    $(window).scroll(function () {
+
+
+        scTop = $(this).scrollTop();
+    
+        if (scTop >= 100 && scSts === 1) {
+
+            scSts = 0;
+        
+            hw.addClass("mobile");
+            $(".mobilemenu_icon img").attr("src","images/mbtn2.png");
+
+
+        } else if (scTop < 100 && scSts === 0) {
+            scSts = 1;
+            
+            hw.removeClass("mobile");
+            $(".mobilemenu_icon img").attr("src","images/mbtn.png");
+        }
+
+    })
+});
 
 
 $(function () {
@@ -78,6 +131,9 @@ $(function () {
             $("#mainmenu li").eq(pno).addClass("on")
                 .siblings().removeClass("on");
 
+
+
+                
 
         });
 

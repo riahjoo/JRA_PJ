@@ -57,7 +57,24 @@ div#header_wrap {
     top: 0px;
     box-sizing: border-box;
     z-index: 10;
+    
 }
+
+
+/* 스크롤시 이벤트 */
+#header_wrap.mobile{
+    background-color:#3d6d93;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.548);
+    
+}
+
+
+#header_wrap.mobile #logo>a{
+    color:#fef9c2; 
+}
+
+
+
 
 #header{
     width:1200px; height:100%;;
