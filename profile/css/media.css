@@ -227,11 +227,11 @@
         margin-right: 0px;
     }
 
-
+    .title {
+        margin-bottom: 19px;
+    }
     @media screen and (orientation:landscape) {
-        .title {
-            margin-bottom: 19px;
-        }
+      
 
         .me {
             display: none;
@@ -316,12 +316,10 @@
 
 
 @media only screen and (max-width:668px) {
-
+   
     @media screen and (orientation:landscape) {
 
-        .title {
-            margin-bottom: 18px;
-        }
+       
 
         .me {
             display: none;
@@ -408,7 +406,7 @@
         }
      
         .title {
-            font-size: 36px;
+            font-size: 36px; 
         }
 
         footer {
