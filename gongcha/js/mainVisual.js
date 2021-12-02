@@ -177,8 +177,6 @@ $(document).ready(function () {
 
         } // for문
 
-
-
     } /////// 모바일 이미지로 변경(세로형)함수
 
 

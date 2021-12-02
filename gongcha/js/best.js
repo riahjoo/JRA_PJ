@@ -69,19 +69,17 @@ $(window).on('load', function () {
    
     let Num=1;//종류 순번
    
-
     function  sortOn(bb) {
 
         let pm = "종류"+bb; // 종류 문자 담는 변수
         let tx = pm.toString(); // 문자화
-        let data = binfo[tx];
+        let data = binfo[tx]; // 객체 데이터값 
         $(".best_topp img").attr("src", data["이미지"]);
         $(".best_topp_sort").text(data["토핑"]);
         $(".best_topp_priceL").text(data["large"]);
         $(".best_topp_priceJ").text(data["jumbo"]);
-       
 
-    }// best_info 부분 내용 변경.
+    }// best_info 부분 내용 변경함수.
 
    
 
@@ -93,8 +91,8 @@ $(window).on('load', function () {
             left: currentPosition - bestWidth
 
         }, 400, "easeOutCubic", function () {
-            Num++;
-            if (Num > bestImgNum) Num = 1;
+            Num++;/* 종류 순번 */
+            if (Num > bestImgNum/* li(이미지) 개수 */) Num = 1;
             sortOn(Num);
 
             bestOverNum++;
@@ -118,7 +116,7 @@ $(window).on('load', function () {
         $(".best_contents:not(:animated)").animate({
             left: currentPosition + bestWidth
         }, 300, "easeOutCubic", function () {
-            Num--;
+            Num--;//종류 순번
             if (Num === 0) Num = bestImgNum;
             sortOn(Num);
 
