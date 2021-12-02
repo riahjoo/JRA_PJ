@@ -92,10 +92,9 @@ $(window).on('load', function () {
     // sns 영역
 
 
-    let vdLi = $(".sns_vd_list li");
-    let vdLidx;
-    let vd = $(".sns_vd");
-
+    let vdLi = $(".sns_vd_list li"); //video list의 li들
+    let vdLidx; //video list의 li의 순번
+    let vd = $(".sns_vd"); //video 재생될 영역
 
     vdLi.children("div").on("click", function () {
 
