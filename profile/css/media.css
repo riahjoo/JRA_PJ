@@ -186,6 +186,7 @@
 
     .me img {
         width: 200px;
+        touch-action: pinch-zoom;
     }
 
     @media screen and (orientation:portrait) {
