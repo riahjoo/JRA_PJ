@@ -1,6 +1,6 @@
 @charset "utf-8";
 
- #logo {touch-action: manipulation;}
+ #logo,.port_img,.sec3_contents {touch-action: manipulation;  touch-action: pinch-zoom;  }
 
 @media only screen and (max-width:1200px) {
 
