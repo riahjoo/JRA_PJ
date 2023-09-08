@@ -33,7 +33,7 @@
 }
 
 #character img{
-    width:100%; display:block;
+    width:100%; display:block; touch-action: manipulation;
 }
 span#arrow{
     position:absolute; bottom:40px; left:50%; transform:translateX(-50%);
