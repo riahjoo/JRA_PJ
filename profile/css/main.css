@@ -4,7 +4,7 @@
 @import url(reset.css);
 @import url(common.css);
 
-body{touch-action: none;}
+body{touch-action: pan-y;}
 
 #sec0_contents{
     margin:0 auto; position:relative; 
